@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 h1,
 h2,
 h3,
@@ -6,6 +11,13 @@ h5,
 h6,
 p {
   margin: 0;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
 img {

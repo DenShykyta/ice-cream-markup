@@ -1,0 +1,113 @@
+.products {
+  background-image: url('images/backgroud_desktop.jpg');
+  background-repeat: repeat;
+  background-position: center;
+}
+.products-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.subtitle {
+  color: $main-txt-cl;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+.products__title {
+  font-family: $secondary-font;
+  color: $main-txt-cl;
+  text-align: center;
+  font-size: 36px;
+  line-height: normal;
+  letter-spacing: 2.16px;
+  text-transform: uppercase;
+  margin-bottom: 303px;
+}
+.products__list {
+  display: flex;
+  gap: 29px;
+}
+.product__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  flex-basis: calc((100% - 29px * 2) / 3);
+  padding: 165px 60px 64px;
+  border-radius: 24px;
+  box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
+
+  &:first-child {
+    background-color: #aec6a5;
+  }
+  &:nth-child(2) {
+    background-color: #efd478;
+  }
+  &:last-child {
+    background-color: #d6936d;
+  }
+
+  & h4 {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    margin-bottom: 66px;
+  }
+  & p {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 400;
+    line-height: 176%;
+    letter-spacing: 0.64px;
+    margin-bottom: 50px;
+  }
+  & img {
+    position: absolute;
+    bottom: 16px;
+  }
+}
+.layout {
+  width: 302px;
+  height: 302px;
+  border-radius: 50%;
+  position: absolute;
+  top: -165px;
+  left: 35px;
+}
+.ice-cream-layout {
+  background: linear-gradient(
+      0deg,
+      rgba(156, 190, 143, 0.7) 0%,
+      rgba(156, 190, 143, 0.7) 100%
+    ),
+    #d9d9d9;
+  box-shadow: 0px 8px 30px 0px rgba(10, 136, 23, 0.25);
+}
+.ice-coffee-layout {
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7) 0%,
+      rgba(248, 210, 78, 0.7) 100%
+    ),
+    #d9d9d9;
+  box-shadow: 0px 8px 30px 0px rgba(153, 114, 23, 0.25);
+}
+.milkshakes-layout {
+  background: linear-gradient(
+      0deg,
+      rgba(213, 117, 63, 0.7) 0%,
+      rgba(213, 117, 63, 0.7) 100%
+    ),
+    #d9d9d9;
+  box-shadow: 0px 8px 30px 0px rgba(0, 0, 0, 0.25);
+}

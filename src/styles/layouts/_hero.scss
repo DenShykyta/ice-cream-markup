@@ -44,6 +44,16 @@
   line-height: normal;
   text-decoration-line: underline;
   padding: 11px 22px;
+
+  &:hover {
+    color: #0a8817;
+  }
+  &:focus {
+    color: $secondary-txt-cl;
+  }
+  &:disabled {
+    border-color: #ababab;
+  }
 }
 .img-wrapper {
   display: flex;
@@ -53,10 +63,8 @@
 .hero-image {
   margin-right: 16px;
   margin-bottom: 65px;
-  //   grid-area: 1 / 1 / 3 / 2;
 }
 .hero__text {
-  //   grid-area: 1 / 2 / 2 / 3;
   color: $secondary-txt-cl;
   font-size: 14px;
   line-height: 140%;
