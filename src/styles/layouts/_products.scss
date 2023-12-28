@@ -2,22 +2,15 @@
   background-image: url('images/backgroud_desktop.jpg');
   background-repeat: repeat;
   background-position: center;
-}
-.products-container {
-  padding-top: 60px;
-  padding-bottom: 60px;
+
+  &-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .subtitle {
-  color: $main-txt-cl;
-  text-align: center;
-  font-family: Montserrat;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 800;
-  line-height: normal;
-  letter-spacing: 1.2px;
-  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .products__title {
   font-family: $secondary-font;

@@ -34,6 +34,12 @@
     border-color: #ababab;
   }
 }
+.hero__title {
+  font-size: 38px;
+  letter-spacing: 1.52px;
+  margin-bottom: 28px;
+  width: 367px;
+}
 
 .hero-link {
   color: $accent-cl;
@@ -55,7 +61,7 @@
     border-color: #ababab;
   }
 }
-.img-wrapper {
+.hero .img-wrapper {
   display: flex;
   align-items: center;
 }
@@ -71,7 +77,7 @@
   max-width: 200px;
   margin-bottom: 24px;
 }
-.text-wrapper svg {
+.hero .text-wrapper svg {
   fill: $secondary-txt-cl;
 }
 .hero__list {
