@@ -13,8 +13,13 @@
 @import './styles//base/title';
 @import './styles//base/subtitle';
 
+// libs
+@import './styles/libs/slick.scss';
+
 // layouts
 @import './styles/layouts/header';
 @import './styles/layouts/hero';
 @import './styles/layouts/products';
 @import './styles/layouts/about';
+@import './styles/layouts/reviews';
+@import './styles/layouts/contacts';

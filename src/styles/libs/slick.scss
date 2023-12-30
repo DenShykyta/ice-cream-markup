@@ -1,0 +1,80 @@
+@import '../../../node_modules/slick-carousel/slick/slick.scss';
+
+.carousel__item {
+  img {
+    margin: 0 auto;
+    margin-bottom: 32px;
+    border-radius: 50px;
+  }
+  .rewiews__img {
+    margin-bottom: 140px;
+    border-radius: 24px;
+  }
+
+  .carousel__text-wrapper {
+    background-color: #84a178;
+    border-radius: 24px;
+    padding: 43px 109px;
+    margin-bottom: 32px;
+  }
+  .carousel__text {
+    color: $secondary-txt-cl;
+    text-align: center;
+    font-weight: 500;
+    line-height: 186%; /* 29.76px */
+    letter-spacing: 0.64px;
+  }
+  .carousel__name {
+    text-align: center;
+    font-weight: 500;
+    line-height: 186%; /* 29.76px */
+    margin-bottom: 32px;
+  }
+}
+
+// .slick-prev {
+//   @extend .visually-hidden;
+// }
+// .slick-next {
+//   @extend .visually-hidden;
+// }
+
+.slick-arrow {
+  @extend .visually-hidden;
+}
+
+// Пагінація
+.slick-dots {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 18px;
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50px);
+
+  button {
+    padding: 0;
+    border: none;
+    background-color: #d9d9d9;
+    cursor: pointer;
+
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    font-size: 0;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+  }
+}
+.slick-active {
+  button {
+    background-color: #84a178;
+  }
+}

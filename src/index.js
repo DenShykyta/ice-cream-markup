@@ -1,2 +1,4 @@
-import './styles.scss';
-console.log('hello world!');
+import $ from 'jquery';
+import 'slick-carousel';
+
+$('.carousel').slick({ dots: true });

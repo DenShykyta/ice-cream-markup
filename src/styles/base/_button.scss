@@ -22,7 +22,7 @@
     background-color: #0a8817;
     color: $secondary-txt-cl;
   }
-  &:focus .header__btn-icon {
+  &:focus svg {
     fill: $secondary-txt-cl;
   }
   &:disabled {
