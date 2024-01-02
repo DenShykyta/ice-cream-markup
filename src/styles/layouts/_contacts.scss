@@ -2,12 +2,17 @@
   background-color: $main-bg-cl;
 }
 .contacts-container {
+  position: relative;
+  padding-top: 474px;
   padding-bottom: 60px;
 }
 .contacts__list {
+  position: absolute;
   display: flex;
   gap: 32px;
-  margin-bottom: 60px;
+  top: -128px;
+  right: 16px;
+  left: 16px;
 
   .contacts__item {
     padding: 40px;
@@ -57,7 +62,7 @@
         color: #ababab;
       }
     }
-    .phone p {
+    .contact-data-link {
       font-weight: 500;
       line-height: 150%; /* 24px */
     }
