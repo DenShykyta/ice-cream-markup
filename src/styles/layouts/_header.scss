@@ -19,8 +19,6 @@
   }
 }
 
-// .header__nav {
-// }
 .nav__list {
   display: flex;
   gap: 28px;
@@ -29,36 +27,3 @@
 .nav-link:hover {
   color: $accent-cl;
 }
-// .nav__list-item {
-// }
-// .header__btn {
-//   padding: 12px 36px;
-//   color: $main-txt-cl;
-//   font-family: $main-font;
-//   font-size: 14px;
-//   font-weight: 600;
-//   line-height: normal;
-//   border-color: transparent;
-//   border-radius: 10px;
-//   background: #f8d24e;
-
-//   cursor: pointer;
-
-//   display: flex;
-//   gap: 4px;
-//   align-items: center;
-
-//   &:hover {
-//     background-color: #0a8817;
-//   }
-//   &:focus {
-//     background-color: #0a8817;
-//     color: $secondary-txt-cl;
-//   }
-//   &:focus .header__btn-icon {
-//     fill: $secondary-txt-cl;
-//   }
-//   &:disabled {
-//     background-color: #ababab;
-//   }
-// }
