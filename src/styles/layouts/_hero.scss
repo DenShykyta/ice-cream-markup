@@ -18,10 +18,12 @@
   margin-bottom: 42px;
 }
 .hero-container .hero__button {
+  text-decoration: none;
   background-color: transparent;
   line-height: 18px;
   padding: 12px 34px;
   border: $accent-cl solid 2px;
+  transition: border-color $fast-anim;
 
   &:hover {
     border-color: #0a8817;
@@ -50,6 +52,7 @@
   line-height: normal;
   text-decoration-line: underline;
   padding: 11px 22px;
+  transition: color $fast-anim;
 
   &:hover {
     color: #0a8817;
@@ -77,23 +80,22 @@
   max-width: 200px;
   margin-bottom: 24px;
 }
-.hero .text-wrapper svg {
+.hero svg {
   fill: $secondary-txt-cl;
 }
 .hero__list {
   position: absolute;
   top: 56px;
   right: 16px;
-}
-
-.hero__list-number {
-  text-align: right;
-  font-size: 46px;
-  font-weight: 900;
-  line-height: normal;
-  letter-spacing: 1.84px;
-  text-transform: uppercase;
-}
-.hero__list-text {
-  text-align: right;
+  &-number {
+    text-align: right;
+    font-size: 46px;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 1.84px;
+    text-transform: uppercase;
+  }
+  &-text {
+    text-align: right;
+  }
 }

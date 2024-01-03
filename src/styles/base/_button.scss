@@ -1,5 +1,4 @@
 .button {
-  padding: 12px 36px;
   color: $main-txt-cl;
   font-family: $main-font;
   font-size: 14px;
@@ -7,7 +6,11 @@
   line-height: normal;
   border-color: transparent;
   border-radius: 10px;
-  background: #f8d24e;
+  background-color: #f8d24e;
+
+  padding: 12px 36px;
+
+  transition: background-color $fast-anim;
 
   cursor: pointer;
 

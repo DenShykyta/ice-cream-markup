@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ice Cream</title>
+    <link rel="icon" href="/logo-favicon.6677d438.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Seymour+One&display=swap" rel="stylesheet">
@@ -13,7 +14,7 @@
   <body>
     <header class="header">
   <div class="header-container container">
-    <a class="header__logo link" href="#">
+    <a class="header__logo link" href="#home">
       <svg class="icon" width="60" height="65">
         <use href="/sprite.5ec50489.svg#icon-logo"></use>
       </svg>
@@ -21,16 +22,16 @@
     <nav class="header__nav">
       <ul class="nav__list list">
         <li class="nav__list-item">
-          <a href="" class="nav-link link">Home</a>
+          <a href="#home" class="nav-link link">Home</a>
         </li>
         <li class="nav__list-item">
-          <a href="" class="nav-link link">How it’s made?</a>
+          <a href="#about" class="nav-link link">How it’s made?</a>
         </li>
         <li class="nav__list-item">
-          <a href="" class="nav-link link">Our products</a>
+          <a href="#products" class="nav-link link">Our products</a>
         </li>
         <li class="nav__list-item">
-          <a href="" class="nav-link link">Contact</a>
+          <a href="#contacts" class="nav-link link">Contact</a>
         </li>
       </ul>
     </nav>
@@ -43,16 +44,16 @@
   </div>
 </header>
 
-    <section class="hero">
+    <section class="hero" id="home">
   <div class="hero-container container">
     <h1 class="hero__title title">ice cream made with passion</h1>
     <div class="link-wrapper">
-      <button type="button" class="button hero__button">Products</button>
-      <a class="hero-link link" href="#">How it’s made?</a>
+      <a class="button hero__button" href="#products"> Products </a>
+      <a class="hero-link link" href="#about">How it’s made?</a>
     </div>
     <div class="img-wrapper">
       <img class="hero-image" src="/ice-creams.491399e5.png" alt="ice-creams" width="225">
-      <div class="text-wrapper">
+      <div>
         <p class="hero__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et
@@ -75,7 +76,7 @@
   </div>
 </section>
 
-    <section class="products">
+    <section class="products" id="products">
   <div class="products-container container">
     <h3 class="subtitle">100% natural</h3>
     <h2 class="products__title">products</h2>
@@ -123,7 +124,7 @@
   </div>
 </section>
 
-    <section class="about">
+    <section class="about" id="about">
   <div class="about__container container">
     <h3 class="about__subtitle subtitle">tradition and love</h3>
     <h2 class="title">how it’s made?</h2>
@@ -194,9 +195,10 @@
 
     <section class="rewiews">
   <div class="container rewiews-container">
+    <h2 class="visually-hidden">products</h2>
     <div class="carousel">
       <div class="carousel__item">
-        <img class="rewiews__img" src="/rewiews-img.419ed581.jpg" alt="ice-cream" width="1013">
+        <img class="rewiews__img" src="/slider-img-1.78af6a7a.jpg" alt="ice-cream" width="1013">
         <img class="user-img" src="/emily_img.410149c6.png" alt="Emily" width="85">
         <div class="carousel__text-wrapper">
           <p class="carousel__text">
@@ -208,7 +210,7 @@
         <p class="carousel__name">Emily, Los Angeles</p>
       </div>
       <div class="carousel__item">
-        <img class="rewiews__img" src="/rewiews-img.419ed581.jpg" alt="ice-cream" width="1013">
+        <img class="rewiews__img" src="/slider-img-2.fa65e05e.jpg" alt="ice-cream" width="1013">
         <img class="user-img" src="/bryan_img.0c84dd45.png" alt="Bryan" width="85">
         <div class="carousel__text-wrapper">
           <p class="carousel__text">
@@ -219,7 +221,7 @@
         <p class="carousel__name">Bryan, New-York</p>
       </div>
       <div class="carousel__item">
-        <img class="rewiews__img" src="/rewiews-img.419ed581.jpg" alt="ice-cream" width="1013">
+        <img class="rewiews__img" src="/slider-img-3.44bb3e25.jpg" alt="ice-cream" width="1013">
         <img class="user-img" src="/diana_img.c68c96cf.png" alt="Diana" width="85">
         <div class="carousel__text-wrapper">
           <p class="carousel__text">
@@ -234,7 +236,7 @@
   </div>
 </section>
 
-    <section class="contacts">
+    <section class="contacts" id="contacts">
   <h2 class="visually-hidden">Contacts</h2>
   <div class="container contacts-container">
     <ul class="contacts__list list">

@@ -1,5 +1,8 @@
 .header {
   background-color: $main-bg-cl;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 
   &-container {
     color: $secondary-txt-cl;
@@ -24,6 +27,9 @@
   gap: 28px;
   margin-bottom: 13px;
 }
-.nav-link:hover {
-  color: $accent-cl;
+.nav-link {
+  transition: color $slow-anim;
+  &:hover {
+    color: $accent-cl;
+  }
 }

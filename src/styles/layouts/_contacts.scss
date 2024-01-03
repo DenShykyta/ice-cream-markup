@@ -84,6 +84,7 @@
   line-height: 18px;
   padding: 12px 55px;
   border: $accent-cl solid 2px;
+  transition: border-color $fast-anim;
 
   &:hover {
     border-color: #0a8817;

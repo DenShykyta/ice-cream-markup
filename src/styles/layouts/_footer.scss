@@ -58,6 +58,7 @@
     border-radius: 50%;
     background-color: #f8d24e;
     fill: $main-bg-cl;
+    transition: fill $fast-anim;
 
     &:hover,
     &:focus {

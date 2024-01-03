@@ -1,18 +1,19 @@
 .container {
-  // outline: 1px solid red;
-  // outline-offset: -1px;
-  width: 320px;
-  padding: 0 20px;
+  outline: 1px solid red;
+  outline-offset: -1px;
+  padding: 0 16px;
   margin: 0 auto;
 
+  //mobile
+  @media screen and (min-width: $mobile) {
+    width: 312px; /*280+16+16*/
+  }
   // tablet
   @media screen and (min-width: $tablet) {
-    width: 480px;
-    padding: 0 32px;
+    width: 736px; /*704+16+16*/
   }
   // desktop
   @media screen and (min-width: $desktop) {
     width: 1200px;
-    padding: 0 16px;
   }
 }
