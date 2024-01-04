@@ -1,0 +1,35 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  input,
+  textarea {
+    outline: none;
+    width: 368px;
+    border-radius: 10px;
+    border: 1px solid $main-bg-cl;
+    background: rgba(248, 210, 78, 0.1);
+    padding: 11px 16px;
+    margin-bottom: 16px;
+    &::placeholder {
+      font-family: $main-font;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 140%;
+      text-transform: capitalize;
+      color: $main-txt-cl;
+    }
+    &:focus {
+      outline: none;
+      border: 1px solid $accent-cl;
+    }
+  }
+
+  textarea {
+    height: 84px;
+    margin-bottom: 32px;
+  }
+}

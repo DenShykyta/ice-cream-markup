@@ -35,7 +35,7 @@
         </li>
       </ul>
     </nav>
-    <button class="header__btn button" type="button">
+    <button class="header__btn button js-open-modal" data-modal="Buy-now" type="button">
       <span class="header__btn-text">Buy now</span>
       <svg class="header__btn-icon" width="12" height="12">
         <use href="/sprite.5ec50489.svg#icon-arrow-right"></use>
@@ -83,42 +83,48 @@
     <ul class="products__list list">
       <li class="product__item">
         <div class="layout ice-cream-layout">
-          <img src="/kelsey-curtis.1f059543.png" alt="ice cream" width="302">
+          <img src="/ice-cream.8f5e7b98.png" alt="ice cream" width="302">
         </div>
         <h4>ice cream</h4>
         <p>
           Soft ice cream with a delicate taste. Made with milk, cream, sugar and
           natural stabilizer
         </p>
-        <svg class="icon" width="40" height="16">
-          <use href="/sprite.5ec50489.svg#icon-Arrow"></use>
-        </svg>
+        <button class="product__arrow-button js-open-modal" data-modal="Product">
+          <svg class="icon" width="40" height="16">
+            <use href="/sprite.5ec50489.svg#icon-Arrow"></use>
+          </svg>
+        </button>
       </li>
       <li class="product__item">
         <div class="layout ice-coffee-layout">
-          <img src="/pariwat-pannium.92d0709e.png" alt="ice coffee" width="302">
+          <img src="/ice-coffee.4fa8fede.png" alt="ice coffee" width="302">
         </div>
         <h4>ice coffee</h4>
         <p>
           Fragrant invigorating drink created from 100% natural ingredients
           without the use of preservatives and flavor enhancers
         </p>
-        <svg class="icon" width="40" height="16">
-          <use href="/sprite.5ec50489.svg#icon-Arrow"></use>
-        </svg>
+        <button class="product__arrow-button js-open-modal" data-modal="Product">
+          <svg class="icon" width="40" height="16">
+            <use href="/sprite.5ec50489.svg#icon-Arrow"></use>
+          </svg>
+        </button>
       </li>
       <li class="product__item">
         <div class="layout milkshakes-layout">
-          <img src="/victor-rutka.5f28c715.png" alt="milkshakes" width="302">
+          <img src="/milkshake.6126cedf.png" alt="milkshakes" width="302">
         </div>
         <h4>milkshakes</h4>
         <p>
           Sweet drinks based on milk and ice cream, supplemented with syrups,
           fruits, berries and other sweets of your choice
         </p>
-        <svg class="icon" width="40" height="16">
-          <use href="/sprite.5ec50489.svg#icon-Arrow"></use>
-        </svg>
+        <button class="product__arrow-button js-open-modal" data-modal="Product">
+          <svg class="icon" width="40" height="16">
+            <use href="/sprite.5ec50489.svg#icon-Arrow"></use>
+          </svg>
+        </button>
       </li>
     </ul>
   </div>
@@ -347,6 +353,112 @@
     <p class="under-text">© 2022 - IceCream. All Rights Reserved.</p>
   </div>
 </footer>
+
+    <div class="overlay js-overlay-modal"></div>
+<div class="modal header-modal" data-modal="Buy-now">
+  <h2 class="modal-title">Buy now</h2>
+  <button type="button" class="close js-modal-close">
+    <svg width="24" height="24">
+      <use href="/sprite.5ec50489.svg#icon-close"></use>
+    </svg>
+  </button>
+  <ul class="list header-modal-list">
+    <li class="header-modal-item">
+      <div class="layout ice-cream-layout">
+        <img src="/ice-cream.8f5e7b98.png" alt="ice cream" width="132">
+      </div>
+      <p>ice cream</p>
+    </li>
+    <li class="header-modal-item">
+      <div class="layout ice-coffee-layout">
+        <img src="/ice-coffee.4fa8fede.png" alt="ice coffee" width="132">
+      </div>
+
+      <p>ice coffee</p>
+    </li>
+    <li class="header-modal-item">
+      <div class="layout milkshakes-layout">
+        <img src="/milkshake.6126cedf.png" alt="milkshake" width="132">
+      </div>
+
+      <p>milkshake</p>
+    </li>
+  </ul>
+  <form class="form" name="buy_now" autocomplete="on" novalidate="">
+    <label><input name="name" type="text" placeholder="name" autofocus=""></label>
+    <label><input name="phone" type="tel" placeholder="phone"></label>
+    <label>
+      <textarea type="text" placeholder="Comment"></textarea>
+    </label>
+    <button type="submit" class="button">Submit</button>
+  </form>
+</div>
+
+    <div class="overlay js-overlay-modal"></div>
+<div class="modal product-modal" data-modal="Product">
+  <h2 class="modal-title">Chololate icecream</h2>
+  <button type="button" class="close js-modal-close">
+    <svg width="24" height="24">
+      <use href="/sprite.5ec50489.svg#icon-close"></use>
+    </svg>
+  </button>
+  <div class="layout">
+    <img src="/ice-cream-chocolate.826ccd26.png" alt="Chololate icecream" width="132">
+  </div>
+  <ul class="list nutritional-value-list">
+    <li class="nutritional-value-item">
+      <p class="value">320</p>
+      <p class="indicator">kcal</p>
+    </li>
+    <li class="nutritional-value-item">
+      <p class="value">4g</p>
+      <p class="indicator">Protein...</p>
+    </li>
+    <li class="nutritional-value-item">
+      <p class="value">8,2g</p>
+      <p class="indicator">Fats</p>
+    </li>
+    <li class="nutritional-value-item">
+      <p class="value">40,4g</p>
+      <p class="indicator">Carbs</p>
+    </li>
+  </ul>
+  <h3 class="ingredients-list-title">Ingredients</h3>
+  <ul class="list ingredients-list">
+    <li class="ingredients-item">
+      <p>Milk</p>
+      <p>100ml</p>
+    </li>
+    <li class="ingredients-item">
+      <p>Belgian chocolate</p>
+      <p>20g</p>
+    </li>
+    <li class="ingredients-item">
+      <p>Cream</p>
+      <p>150 ml</p>
+    </li>
+    <li class="ingredients-item">
+      <p>Cocoa powder</p>
+      <p>30g</p>
+    </li>
+    <li class="ingredients-item">
+      <p>Sugar</p>
+      <p>40g</p>
+    </li>
+    <li class="ingredients-item">
+      <p>Vanilla sugar</p>
+      <p>10g</p>
+    </li>
+  </ul>
+  <form class="form" name="buy_now" autocomplete="on" novalidate="">
+    <label><input name="name" type="text" placeholder="name" autofocus=""></label>
+    <label><input name="phone" type="tel" placeholder="phone"></label>
+    <label>
+      <textarea type="text" placeholder="Comment"></textarea>
+    </label>
+    <button type="submit" class="button">Submit</button>
+  </form>
+</div>
 
   </body>
 </html>

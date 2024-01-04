@@ -1,0 +1,53 @@
+.header-modal {
+  max-width: 568px;
+  padding: 32px 54px;
+
+  &-list {
+    display: flex;
+    gap: 32px;
+    margin: 103px 0 40px;
+  }
+  &-item {
+    max-width: 132px;
+    flex-basis: calc((100% - 32px * 2) / 3);
+    border-radius: 15px;
+    border: 2px solid #96af8c;
+    box-shadow: 0px 5.26px 19.726px 0px rgba(212, 20, 67, 0.1);
+    padding: 95px 13px 20px;
+    position: relative;
+
+    &:first-child {
+      padding: 95px 16px 20px;
+    }
+
+    &:nth-child(2) {
+      border: 2px solid #efd478;
+      background: #efd478;
+    }
+    &:last-child {
+      border: 2px solid #d6936d;
+    }
+  }
+  & p {
+    text-align: center;
+    text-wrap: nowrap;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+  }
+  .layout {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    position: absolute;
+    top: -63px;
+    left: -2px;
+
+    img {
+      position: absolute;
+      bottom: 7px;
+    }
+  }
+}
