@@ -1,0 +1,19 @@
+.read_more-modal {
+  max-width: 568px;
+  padding: 32px 60px;
+
+  .video {
+    max-width: 448px;
+    max-height: 205px;
+    margin-top: 32px;
+    border-radius: 10px;
+    background: #000;
+    overflow: hidden;
+  }
+
+  .video-desc {
+    display: inline-block;
+    margin-top: 32px;
+    line-height: 140%;
+  }
+}

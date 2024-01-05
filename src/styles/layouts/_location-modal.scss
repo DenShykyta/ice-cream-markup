@@ -1,0 +1,23 @@
+.location-modal {
+  max-width: 568px;
+  padding: 32px 60px;
+
+  .map-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 448px;
+    height: 260px;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 32px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .location-btn {
+    display: inline-block;
+    margin-top: 32px;
+    margin-left: 152px;
+    cursor: pointer;
+  }
+}

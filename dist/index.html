@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ice Cream</title>
-    <link rel="icon" href="/logo-favicon.6677d438.svg" type="image/svg+xml">
+    <link rel="icon" href="/logo-favicon.d4f74892.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Seymour+One&display=swap" rel="stylesheet">
@@ -159,7 +159,7 @@
             <p>This is enough to choose ice cream and coffee for any mood!</p>
           </li>
         </ul>
-        <button type="button" class="button">
+        <button type="button" class="button js-open-modal" data-modal="read_more">
           Read more
           <svg width="12" height="12">
             <use href="/sprite.5ec50489.svg#icon-arrow-right"></use>
@@ -300,13 +300,13 @@
     </ul>
 
     <div class="contacts__buttons">
-      <button class="button" type="button">
+      <button class="button js-open-modal" type="button" data-modal="location">
         Our Locations
         <svg width="12" height="12">
           <use href="/sprite.5ec50489.svg#icon-arrow-right"></use>
         </svg>
       </button>
-      <button class="franchise_btn button" type="button ">
+      <button class="franchise_btn button js-open-modal" type="button" data-modal="franchise">
         Franchise
         <svg width="12" height="12">
           <use href="/sprite.5ec50489.svg#icon-arrow-right"></use>
@@ -450,6 +450,69 @@
       <p>10g</p>
     </li>
   </ul>
+  <form class="form" name="buy_now" autocomplete="on" novalidate="">
+    <label><input name="name" type="text" placeholder="name" autofocus=""></label>
+    <label><input name="phone" type="tel" placeholder="phone"></label>
+    <label>
+      <textarea type="text" placeholder="Comment"></textarea>
+    </label>
+    <button type="submit" class="button">Submit</button>
+  </form>
+</div>
+
+    <div class="overlay js-overlay-modal"></div>
+<div class="modal read_more-modal" data-modal="read_more">
+  <h2 class="modal-title">How it’s made?</h2>
+  <button type="button" class="close js-modal-close">
+    <svg width="24" height="24">
+      <use href="/sprite.5ec50489.svg#icon-close"></use>
+    </svg>
+  </button>
+  <div class="video">
+    <video poster="" width="448" height="205" controls="" loop="" preload="auto">
+      <source src="/Ice cream made with passion.f5dc4038.mp4" type="video/mp4">
+    </video>
+  </div>
+  <p class="video-desc">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+  </p>
+</div>
+
+    <div class="overlay js-overlay-modal"></div>
+<div class="modal location-modal" data-modal="location">
+  <h2 class="modal-title">Our Locations</h2>
+  <button type="button" class="close js-modal-close">
+    <svg width="24" height="24">
+      <use href="/sprite.5ec50489.svg#icon-close"></use>
+    </svg>
+  </button>
+  <div class="map-wrapper">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82744.71155383743!2d34.557238549999994!3d49.60204445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d825e425e6ba6b%3A0xcf3e6bdfb9e4ca82!2z0J_QvtC70YLQsNCy0LAsINCf0L7Qu9GC0LDQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAzNjAwMA!5e0!3m2!1sru!2sua!4v1671214154162!5m2!1sru!2sua" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+      <a class="link button location-btn" target="_blank" href="https://goo.gl/maps/rStyy7rmeLihcvrTA">Open map</a>
+  
+  </div>
+
+
+    <div class="overlay js-overlay-modal"></div>
+<div class="modal franchise-modal" data-modal="franchise">
+  <h2 class="modal-title">
+    Thank you for your interest in owning an Ice Cream shop
+  </h2>
+  <button type="button" class="close js-modal-close">
+    <svg width="24" height="24">
+      <use href="/sprite.5ec50489.svg#icon-close"></use>
+    </svg>
+  </button>
+  <p class="franchise-text">
+    Due to the overwhelming volume of franchise requests we are not accepting
+    new franchisee applications at this time. Once the application process
+    resumes, we will contact you for further information. Please fill out the
+    contact information below and we will reach out for additional information.
+    We appreciate your patience.
+  </p>
   <form class="form" name="buy_now" autocomplete="on" novalidate="">
     <label><input name="name" type="text" placeholder="name" autofocus=""></label>
     <label><input name="phone" type="tel" placeholder="phone"></label>
