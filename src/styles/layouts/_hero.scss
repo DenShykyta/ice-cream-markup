@@ -1,101 +1,194 @@
 .hero {
   background-color: $main-bg-cl;
-}
-.hero-container {
-  position: relative;
-  padding-top: 45px;
-  background-image: url('assets/images/ice-faces.png'), url('assets/images/dots-hero.png');
-  background-repeat: no-repeat;
-  background-position:
-    right 92px bottom,
-    center bottom;
-  background-size: auto, contain;
-}
-.link-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 42px;
-}
-.hero-container .hero__button {
-  text-decoration: none;
-  background-color: transparent;
-  line-height: 18px;
-  padding: 12px 34px;
-  border: $accent-cl solid 2px;
-  transition: border-color $fast-anim;
 
-  &:hover {
-    border-color: #0a8817;
+  .hero-container {
+    padding-top: 50px;
+    padding-bottom: 236px;
+    background-image: url('assets/images/ice-faces-mobile.png'),
+      url('assets/images/dots-hero-mobile.png');
+    background-repeat: no-repeat;
+    background-position:
+      right 60px bottom,
+      center bottom;
+    background-size: auto, contain;
   }
-  &:focus {
-    border-color: #0a8817;
-    color: $secondary-txt-cl;
-  }
-  &:disabled {
-    border-color: #ababab;
-  }
-}
-.hero__title {
-  font-size: 38px;
-  letter-spacing: 1.52px;
-  margin-bottom: 28px;
-  width: 367px;
-}
+  .hero__title {
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 1.04px;
+    text-align: left;
+    margin-bottom: 32px;
 
-.hero-link {
-  color: $accent-cl;
-  text-align: center;
-  font-family: $main-font;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: normal;
-  text-decoration-line: underline;
-  padding: 11px 22px;
-  transition: color $fast-anim;
+    & span {
+      font-size: 34px;
+      line-height: 96.5%;
+    }
+  }
+  .link-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .hero__button {
+    font-size: 12px;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 11px 26px;
+    border-radius: 8px;
+    border: 2px solid $accent-cl;
+    transition: border-color $fast-anim;
 
-  &:hover {
-    color: #0a8817;
+    &:hover {
+      border-color: #0a8817;
+    }
+    &:focus {
+      border-color: #0a8817;
+      color: $secondary-txt-cl;
+    }
+    &:disabled {
+      border-color: #ababab;
+    }
   }
-  &:focus {
-    color: $secondary-txt-cl;
-  }
-  &:disabled {
-    border-color: #ababab;
-  }
-}
-.hero .img-wrapper {
-  display: flex;
-  align-items: center;
-}
+  .hero-link {
+    color: $accent-cl;
+    text-align: center;
+    font-family: $main-font;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration-line: underline;
 
-.hero-image {
-  margin-right: 16px;
-  margin-bottom: 65px;
-}
-.hero__text {
-  color: $secondary-txt-cl;
-  font-size: 14px;
-  line-height: 140%;
-  max-width: 200px;
-  margin-bottom: 24px;
-}
-.hero svg {
-  fill: $secondary-txt-cl;
-}
-.hero__list {
-  position: absolute;
-  top: 56px;
-  right: 16px;
-  &-number {
-    text-align: right;
-    font-size: 46px;
-    font-weight: 900;
-    line-height: normal;
-    letter-spacing: 1.84px;
-    text-transform: uppercase;
+    transition: color $fast-anim;
+
+    &:hover {
+      color: #0a8817;
+    }
+    &:focus {
+      color: $secondary-txt-cl;
+    }
+    &:disabled {
+      border-color: #ababab;
+    }
   }
-  &-text {
-    text-align: right;
+  .img-wrapper,
+  .hero__list {
+    display: none;
+  }
+
+  @media (min-width: $tablet) {
+    .hero-container {
+      position: relative;
+      padding-top: 14px;
+      padding-bottom: 12px;
+      background-image: url('assets/images/ice-faces-tablet.png'),
+        url('assets/images/dots-hero-tablet.png');
+      background-position:
+        right 92px bottom,
+        center bottom;
+    }
+
+    .hero__title {
+      width: 247px;
+      margin-bottom: 24px;
+    }
+
+    .link-wrapper {
+      margin-bottom: 12px;
+    }
+    .img-wrapper {
+      display: flex;
+      align-items: center;
+    }
+    .hero-image {
+      width: 152px;
+      margin-right: 32px;
+    }
+    .hero__text {
+      color: $secondary-txt-cl;
+      font-size: 12px;
+      line-height: 140%;
+      max-width: 139px;
+      margin-bottom: 12px;
+    }
+    svg {
+      fill: $secondary-txt-cl;
+    }
+    .hero__list {
+      display: block;
+      position: absolute;
+      top: 28px;
+      right: 32px;
+      &-number {
+        text-align: right;
+        font-size: 28px;
+        font-weight: 900;
+        letter-spacing: 1.12px;
+        text-transform: uppercase;
+      }
+      &-text {
+        color: $secondary-txt-cl;
+        font-size: 8px;
+        font-weight: 400;
+        line-height: normal;
+        text-align: right;
+      }
+    }
+  }
+  @media (min-width: $desktop) {
+    .hero-container {
+      position: relative;
+      padding-top: 45px;
+      padding-bottom: 65px;
+      background-image: url('assets/images/ice-faces-desktop.png'),
+        url('assets/images/dots-hero-desktop.png');
+      background-position:
+        right 92px bottom,
+        center bottom;
+    }
+    .hero__title {
+      font-size: 38px;
+      letter-spacing: 1.52px;
+      margin-bottom: 28px;
+      width: 367px;
+    }
+    .link-wrapper {
+      margin-bottom: 42px;
+    }
+    .hero__button {
+      font-size: 14px;
+      line-height: 18px;
+      border-radius: 10px;
+      padding: 12px 34px;
+    }
+    .hero-link {
+      font-size: 14px;
+      font-weight: 600;
+      text-decoration-line: underline;
+      padding: 11px 22px;
+      transition: color $fast-anim;
+    }
+    .hero-image {
+      width: 225px;
+      margin-right: 16px;
+    }
+    .hero__text {
+      font-size: 14px;
+      max-width: 200px;
+      margin-bottom: 24px;
+      margin-top: 32px;
+    }
+    .hero svg {
+      fill: $secondary-txt-cl;
+    }
+    .hero__list {
+      top: 56px;
+      right: 16px;
+      &-number {
+        font-size: 46px;
+        letter-spacing: 1.84px;
+      }
+      &-text {
+        font-size: 14px;
+      }
+    }
   }
 }

@@ -13,51 +13,44 @@
     <script type="module" src="/mobile-menu.02d75e0a.js"></script>
   <script src="/styles.164d45a1.js"></script></head>
   <body>
-    <header class="header">
-  <div class="header-container container">
-    <a class="header__logo link" href="#home">
-      <svg class="icon">
-        <use href="/sprite.73486ab0.svg#icon-logo"></use>
-      </svg>
-    </a>
-    <nav class="header__nav">
-      <ul class="nav__list list">
-        <li class="nav__list-item">
-          <a href="#home" class="nav-link link">Home</a>
-        </li>
-        <li class="nav__list-item">
-          <a href="#about" class="nav-link link">How it’s made?</a>
-        </li>
-        <li class="nav__list-item">
-          <a href="#products" class="nav-link link">Our products</a>
-        </li>
-        <li class="nav__list-item">
-          <a href="#contacts" class="nav-link link">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="header-btn-wrapper">
-      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg width="32" height="32">
-          <use href="/sprite.73486ab0.svg#icon-menu"></use>
-        </svg>
-      </button>
-      <button class="header__btn button js-open-modal" data-modal="Buy-now" type="button">
-        <span class="header__btn-text">Buy now</span>
-        <svg class="header__btn-icon" width="12" height="12">
-          <use href="/sprite.73486ab0.svg#icon-arrow-right"></use>
-        </svg>
-      </button>
+    <!-- <include src="./partials/header.html"></include> -->
+    <section class="hero" id="home">
+  <div class="hero-container container">
+    <h1 class="hero__title title">ice cream made with <span>passion</span></h1>
+    <div class="link-wrapper">
+      <a class="button hero__button" href="#products"> Products </a>
+      <a class="hero-link link" href="#about">How it’s made?</a>
     </div>
+    <div class="img-wrapper">
+      <img class="hero-image" src="/ice-creams.a2af1ac4.png" alt="ice-creams" width="225">
+      <div>
+        <p class="hero__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et
+        </p>
+        <svg class="icon" width="40" height="16">
+          <use href="/sprite.73486ab0.svg#icon-Arrow"></use>
+        </svg>
+      </div>
+    </div>
+    <ul class="hero__list list">
+      <li class="hero__list-item">
+        <p class="hero__list-number">16</p>
+        <p class="hero__list-text">cafes</p>
+      </li>
+      <li>
+        <p class="hero__list-number">23</p>
+        <p class="hero__list-text">food trucks</p>
+      </li>
+    </ul>
   </div>
-</header>
+</section>
 
-    <!-- <include src="./partials/hero.html"></include>
-    <include src="./partials/products.html"></include>
+    <!-- <include src="./partials/products.html"></include>
     <include src="./partials/about.html"></include>
     <include src="./partials/reviews.html"></include>
     <include src="./partials/contacts.html"></include>
-    <include src="./partials/footer.html"></include> -->
+    <include src="./partials/footer.html"></include>  -->
     <div class="overlay js-overlay-modal"></div>
 <div class="modal header-modal" data-modal="Buy-now">
   <h2 class="modal-title">Buy now</h2>
