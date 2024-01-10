@@ -1,7 +1,7 @@
 <header class="header">
   <div class="header-container container">
     <a class="header__logo link" href="#home">
-      <svg class="icon" width="60" height="65">
+      <svg class="icon">
         <use href="assets/images/sprite.svg#icon-logo"></use>
       </svg>
     </a>
@@ -21,15 +21,26 @@
         </li>
       </ul>
     </nav>
-    <button
-      class="header__btn button js-open-modal"
-      data-modal="Buy-now"
-      type="button"
-    >
-      <span class="header__btn-text">Buy now</span>
-      <svg class="header__btn-icon" width="12" height="12">
-        <use href="assets/images/sprite.svg#icon-arrow-right"></use>
-      </svg>
-    </button>
+    <div class="header-btn-wrapper">
+      <button
+        class="menu-toggle js-open-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <svg width="32" height="32">
+          <use href="assets/images/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
+      <button
+        class="header__btn button js-open-modal"
+        data-modal="Buy-now"
+        type="button"
+      >
+        <span class="header__btn-text">Buy now</span>
+        <svg class="header__btn-icon" width="12" height="12">
+          <use href="assets/images/sprite.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
+    </div>
   </div>
 </header>
