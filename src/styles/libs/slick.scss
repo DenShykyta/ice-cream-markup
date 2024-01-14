@@ -1,34 +1,38 @@
 @import '../../../node_modules/slick-carousel/slick/slick.scss';
 
+//  ============= Mobile screen =========== //
 .carousel__item {
-  img {
+  .rewiews__img {
+    margin: 0 auto;
+    margin-bottom: 80px;
+    border-radius: 8px;
+    height: 130px;
+  }
+  .user-img {
     margin: 0 auto;
     margin-bottom: 32px;
     border-radius: 50px;
   }
-  .rewiews__img {
-    margin-bottom: 140px;
-    border-radius: 24px;
-  }
-
   .carousel__text-wrapper {
-    background-color: #84a178;
-    border-radius: 24px;
-    padding: 43px 109px;
+    background-color: $main-bg-cl;
+    border-radius: 10px;
+    padding: 35px 39px;
+    margin: 0 auto;
     margin-bottom: 32px;
   }
   .carousel__text {
     color: $secondary-txt-cl;
+    font-size: 12px;
     text-align: center;
-    font-weight: 500;
-    line-height: 186%; /* 29.76px */
-    letter-spacing: 0.64px;
+    font-weight: 400;
+    line-height: 255%;
   }
   .carousel__name {
+    font-size: 20px;
     text-align: center;
     font-weight: 500;
-    line-height: 186%; /* 29.76px */
-    margin-bottom: 32px;
+    line-height: 186%;
+    margin-bottom: 12px;
   }
 }
 
@@ -54,7 +58,7 @@
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50px);
+  transform: translateX(-50%);
 
   button {
     padding: 0;
@@ -74,6 +78,51 @@
 }
 .slick-active {
   button {
-    background-color: #84a178;
+    background-color: $main-bg-cl;
+  }
+}
+
+//  ============= Tablet screen =========== //
+@media (min-width: $tablet) {
+  .carousel__item {
+    .rewiews__img {
+      margin-bottom: 100px;
+      border-radius: 18px;
+      height: 327px;
+    }
+    .carousel__text-wrapper {
+      border-radius: 24px;
+      padding: 28px 80px;
+    }
+    .carousel__text {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 186%;
+      letter-spacing: 0.56px;
+    }
+    .carousel__name {
+      font-size: 16px;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+//  ============= Desktop screen =========== //
+
+@media (min-width: $desktop) {
+  .carousel__item {
+    .rewiews__img {
+      margin-bottom: 140px;
+      border-radius: 24px;
+      height: 422px;
+    }
+    .carousel__text-wrapper {
+      width: 968px;
+      padding: 43px 109px;
+    }
+    .carousel__text {
+      font-size: 16px;
+      letter-spacing: 0.64px;
+    }
   }
 }

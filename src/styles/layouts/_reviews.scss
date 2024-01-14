@@ -1,10 +1,28 @@
+// ============== Mobile screen ============ //
 .rewiews {
-  background: $main-bg-cl url('assets/images/backgroud_desktop.jpg');
-  background-repeat: repeat-x;
-  background-position: center top 98px;
+  background: $main-bg-cl url('assets/images/backgroud_mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: center top 32px;
   position: relative;
 
   &-container {
-    padding-bottom: 228px;
+    padding-bottom: 393px;
+  }
+  // ============== Tablet screen ============ //
+
+  @media (min-width: $tablet) {
+    background-position: center top 144px;
+
+    &-container {
+      padding-bottom: 379px;
+    }
+  }
+  // ============== Desktop screen ============ //
+  @media (min-width: $desktop) {
+    background-repeat: repeat-x;
+    background-position: center top 98px;
+    &-container {
+      padding-bottom: 228px;
+    }
   }
 }
