@@ -11,6 +11,7 @@
   // ============== Tablet screen ============ //
 
   @media (min-width: $tablet) {
+    background-repeat: repeat-x;
     background-position: center top 144px;
 
     &-container {
@@ -19,7 +20,6 @@
   }
   // ============== Desktop screen ============ //
   @media (min-width: $desktop) {
-    background-repeat: repeat-x;
     background-position: center top 98px;
     &-container {
       padding-bottom: 228px;
