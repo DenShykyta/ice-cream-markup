@@ -1,16 +1,32 @@
+// ======== Mobile screen ========= //
 .franchise-modal {
-  max-width: 568px;
-  padding: 32px 60px;
+  max-width: 280px;
+  padding: 28px;
 
-  .modal-title {
-    width: 322px;
-    margin: 0 auto;
-  }
   .franchise-text {
-    width: 448px;
+    font-size: 14px;
+    font-weight: 400;
     line-height: 140%;
 
-    margin-top: 24px;
-    margin-bottom: 32px;
+    margin-top: 20px;
+    margin-bottom: 24px;
+  }
+
+  // ======== Tablet/Desktop screen ========= //
+  @media (min-width: $tablet) {
+    max-width: 568px;
+    padding: 32px 60px;
+
+    .modal-title {
+      max-width: 322px;
+      margin: 0 auto;
+    }
+    .franchise-text {
+      font-size: 16px;
+      max-width: 448px;
+
+      margin-top: 24px;
+      margin-bottom: 32px;
+    }
   }
 }

@@ -1,3 +1,4 @@
+// ======== Mobile screen ========= //
 .form {
   display: flex;
   flex-direction: column;
@@ -7,15 +8,15 @@
   input,
   textarea {
     outline: none;
-    width: 368px;
+    width: 224px;
     border-radius: 10px;
     border: 1px solid $main-bg-cl;
     background: rgba(248, 210, 78, 0.1);
-    padding: 11px 16px;
-    margin-bottom: 16px;
+    padding: 8px 12px;
+    margin-bottom: 12px;
     &::placeholder {
       font-family: $main-font;
-      font-size: 14px;
+      font-size: 12px;
       font-style: normal;
       font-weight: 400;
       line-height: 140%;
@@ -29,7 +30,24 @@
   }
 
   textarea {
-    height: 84px;
-    margin-bottom: 32px;
+    height: 64px;
+    margin-bottom: 24px;
+  }
+
+  // ======== Tablet/Desktop screen ========= //
+  @media (min-width: $tablet) {
+    input,
+    textarea {
+      width: 368px;
+      padding: 11px 16px;
+      margin-bottom: 16px;
+      &::placeholder {
+        font-size: 14px;
+      }
+    }
+    textarea {
+      height: 84px;
+      margin-bottom: 32px;
+    }
   }
 }

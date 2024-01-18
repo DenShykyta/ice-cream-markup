@@ -1,14 +1,15 @@
+// ======== Mobile screen ========= //
 .button {
   color: $main-txt-cl;
   font-family: $main-font;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 600;
   line-height: normal;
   border-color: transparent;
   border-radius: 10px;
   background-color: #f8d24e;
 
-  padding: 12px 36px;
+  padding: 12px 34px;
 
   transition: background-color $fast-anim;
 
@@ -30,5 +31,11 @@
   }
   &:disabled {
     background-color: #ababab;
+  }
+  // ======== Tablet/Desktop screen ========= //
+
+  @media (min-width: $tablet) {
+    font-size: 14px;
+    padding: 12px 36px;
   }
 }

@@ -1,16 +1,23 @@
 .hero {
   background-color: $main-bg-cl;
-
+  // ==================== Mobile screen ============== //
   .hero-container {
     padding-top: 50px;
     padding-bottom: 236px;
-    background-image: url('assets/images/ice-faces-mobile.png'),
-      url('assets/images/dots-hero-mobile.png');
+    background-image: url('assets/images/hero/bg-faces_sm@1x.png'),
+      url('assets/images/hero/dots-hero-mobile.png');
     background-repeat: no-repeat;
     background-position:
       right 60px bottom,
       center bottom;
-    background-size: auto, contain;
+    background-size: 177px, contain;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('assets/images/hero/bg-faces_sm@2x.png'),
+        url('assets/images/hero/dots-hero-mobile.png');
+    }
   }
   .hero__title {
     font-size: 26px;
@@ -73,17 +80,25 @@
   .hero__list {
     display: none;
   }
-
+  // ==================== Tablet screen ============== //
   @media (min-width: $tablet) {
     .hero-container {
       position: relative;
       padding-top: 14px;
       padding-bottom: 12px;
-      background-image: url('assets/images/ice-faces-tablet.png'),
-        url('assets/images/dots-hero-tablet.png');
+      background-image: url('assets/images/hero/bg-faces_md@1x.png'),
+        url('assets/images/hero/dots-hero-tablet.png');
       background-position:
         right 92px bottom,
         center bottom;
+      background-size: 268px, contain;
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('assets/images/hero/bg-faces_md@2x.png'),
+          url('assets/images/hero/dots-hero-tablet.png');
+      }
     }
 
     .hero__title {
@@ -133,16 +148,25 @@
       }
     }
   }
+  // ==================== Desktop screen ============== //
   @media (min-width: $desktop) {
     .hero-container {
       position: relative;
       padding-top: 45px;
       padding-bottom: 65px;
-      background-image: url('assets/images/ice-faces-desktop.png'),
-        url('assets/images/dots-hero-desktop.png');
+      background-image: url('assets/images/hero/bg-faces_lg@1x.png'),
+        url('assets/images/hero/dots-hero-desktop.png');
       background-position:
         right 92px bottom,
         center bottom;
+      background-size: 456px, contain;
+
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('assets/images/hero/bg-faces_lg@2x.png'),
+          url('assets/images/hero/dots-hero-desktop.png');
+      }
     }
     .hero__title {
       font-size: 38px;

@@ -1,23 +1,36 @@
+// ======== Mobile screen ========= //
 .location-modal {
-  max-width: 568px;
-  padding: 32px 60px;
+  max-width: 280px;
+  padding: 28px;
 
   .map-wrapper {
     display: flex;
     flex-direction: column;
-    width: 448px;
-    height: 260px;
     justify-content: center;
     align-items: center;
 
-    margin-top: 32px;
+    margin-top: 20px;
     border-radius: 10px;
     overflow: hidden;
+
+    iframe {
+      max-width: 224px;
+      max-height: 199px;
+      margin-bottom: 24px;
+    }
   }
-  .location-btn {
-    display: inline-block;
-    margin-top: 32px;
-    margin-left: 152px;
-    cursor: pointer;
+
+  // ======== Tablet/Desktop screen ========= //
+  @media (min-width: $tablet) {
+    max-width: 568px;
+    padding: 32px 60px;
+    .map-wrapper {
+      margin-top: 32px;
+      iframe {
+        max-width: 448px;
+        max-height: 260px;
+        margin-bottom: 32px;
+      }
+    }
   }
 }

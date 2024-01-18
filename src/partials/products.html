@@ -5,7 +5,19 @@
     <ul class="products__list list">
       <li class="product__item">
         <div class="layout ice-cream-layout">
-          <img src="assets/images/ice-cream.png" alt="ice cream" width="302" />
+          <img
+            srcset="
+              assets/images/products/ice-cream_200.png 200w,
+              assets/images/products/ice-cream_400.png 400w,
+              assets/images/products/ice-cream_302.png 302w,
+              assets/images/products/ice-cream_604.png 604w
+            "
+            sizes="(min-width: 1200px) 302px, (min-width: 768px) 200px, (min-width: 320px) 200px, 100vw"
+            src="assets/images/products/ice-cream_200.png"
+            alt="ice cream"
+            loading="lazy"
+            width="200"
+          />
         </div>
         <h4>ice cream</h4>
         <p>
@@ -24,9 +36,17 @@
       <li class="product__item">
         <div class="layout ice-coffee-layout">
           <img
-            src="assets/images/ice-coffee.png"
+            srcset="
+              ./assets/images/products/ice-coffee_200.png 200w,
+              ./assets/images/products/ice-coffee_400.png 400w,
+              ./assets/images/products/ice-coffee_302.png 302w,
+              ./assets/images/products/ice-coffee_604.png 604w
+            "
+            sizes="(min-width: 1200px) 302px, (min-width: 768px) 200px, (min-width: 320px) 200px, 100vw"
+            src="./assets/images/products/ice-coffee_200.png"
             alt="ice coffee"
-            width="302"
+            loading="lazy"
+            width="200"
           />
         </div>
         <h4>ice coffee</h4>
@@ -45,7 +65,19 @@
       </li>
       <li class="product__item">
         <div class="layout milkshakes-layout">
-          <img src="assets/images/milkshake.png" alt="milkshakes" width="302" />
+          <img
+            srcset="
+              ./assets/images/products/milkshakes_200.png 200w,
+              ./assets/images/products/milkshakes_400.png 400w,
+              ./assets/images/products/milkshakes_302.png 302w,
+              ./assets/images/products/milkshakes_604.png 604w
+            "
+            sizes="(min-width: 1200px) 302px, (min-width: 768px) 200px, (min-width: 320px) 200px, 100vw"
+            src="./assets/images/products/milkshakes_200.png"
+            alt="milkshakes"
+            loading="lazy"
+            width="200"
+          />
         </div>
         <h4>milkshakes</h4>
         <p>

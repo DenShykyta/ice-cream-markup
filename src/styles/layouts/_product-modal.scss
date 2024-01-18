@@ -1,43 +1,47 @@
+// ======== Mobile screen ========= //
 .product-modal {
-  max-width: 568px;
-  padding: 22px 40px;
-
+  max-width: 280px;
+  padding: 28px 20px;
+  .modal-title {
+    font-size: 20px;
+    line-height: 28px;
+    max-width: 142px;
+    margin: 0 auto;
+  }
   .nutritional-value-list {
     display: flex;
-    gap: 20px;
+    gap: 9px;
     justify-content: center;
-    padding-left: 84px;
-    padding-right: 84px;
-    margin-top: 157px;
-    margin-bottom: 28px;
+    margin-top: 182px;
+    margin-bottom: 40px;
   }
   .nutritional-value-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 65px;
+    width: 53px;
     border-radius: 40px;
     border: 2px solid #9cbe8f;
-    padding-bottom: 15px;
+    padding-bottom: 8px;
 
     .value {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 53px;
-      height: 53px;
+      width: 43px;
+      height: 43px;
       border-radius: 50%;
       background-color: #9cbe8f;
       filter: drop-shadow(0px 6px 20px rgba(10, 136, 23, 0.25));
-      margin-bottom: 6px;
+      margin-bottom: 8px;
 
-      font-size: 12px;
+      font-size: 10px;
       font-weight: 500;
       line-height: 28px;
     }
 
     .indicator {
-      font-size: 12px;
+      font-size: 10px;
       font-weight: 400;
       line-height: normal;
     }
@@ -46,7 +50,7 @@
   .ingredients-list {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
     gap: 11px;
     &-title {
@@ -55,7 +59,7 @@
       font-style: normal;
       font-weight: 500;
       line-height: 28px;
-      margin-bottom: 14px;
+      margin-bottom: 24px;
     }
   }
   .ingredients-item {
@@ -63,7 +67,7 @@
     justify-content: space-between;
 
     font-size: 14px;
-    line-height: 176%; /* 24.64px */
+    line-height: 176%;
     letter-spacing: 0.56px;
   }
   .layout {
@@ -71,14 +75,52 @@
     height: 132px;
     border-radius: 50%;
     position: absolute;
-    top: 71px;
-    left: 218px;
+    top: 111px;
+    left: 74px;
     background-color: #9cbe8f;
     box-shadow: 0px 5.26px 19.726px rgba(10, 136, 23, 0.25);
 
     img {
       position: absolute;
       bottom: 7px;
+    }
+  }
+  // ======== Tablet/Desktop screen ========= //
+
+  @media (min-width: $tablet) {
+    max-width: 568px;
+    padding: 32px 40px;
+    .modal-title {
+      max-width: none;
+    }
+
+    .nutritional-value-list {
+      gap: 20px;
+      padding-left: 84px;
+      padding-right: 84px;
+      margin-top: 188px;
+      margin-bottom: 48px;
+    }
+    .nutritional-value-item {
+      width: 65px;
+      padding-bottom: 15px;
+
+      .value {
+        width: 53px;
+        height: 53px;
+        margin-bottom: 6px;
+
+        font-size: 12px;
+      }
+
+      .indicator {
+        font-size: 12px;
+      }
+    }
+
+    .layout {
+      top: 91px;
+      left: 218px;
     }
   }
 }

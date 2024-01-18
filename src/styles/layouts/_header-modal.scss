@@ -1,15 +1,17 @@
+// ======== Mobile screen ========= //
 .header-modal {
-  max-width: 568px;
-  padding: 32px 54px;
+  max-width: 280px;
+  padding: 28px;
 
   &-list {
     display: flex;
-    gap: 32px;
-    margin: 103px 0 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 82px;
+    margin: 83px 0 32px;
   }
   &-item {
-    max-width: 132px;
-    flex-basis: calc((100% - 32px * 2) / 3);
+    width: 132px;
     border-radius: 15px;
     border: 2px solid #96af8c;
     box-shadow: 0px 5.26px 19.726px 0px rgba(212, 20, 67, 0.1);
@@ -42,12 +44,56 @@
     height: 132px;
     border-radius: 50%;
     position: absolute;
-    top: -63px;
+
+    top: -64px;
     left: -2px;
 
     img {
       position: absolute;
       bottom: 7px;
+    }
+  }
+  .ice-cream-layout {
+    background: linear-gradient(
+        0deg,
+        rgba(156, 190, 143, 0.7) 0%,
+        rgba(156, 190, 143, 0.7) 100%
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.342px 20.033px rgba(10, 136, 23, 0.25);
+  }
+  .ice-coffee-layout {
+    background: linear-gradient(
+        0deg,
+        rgba(248, 210, 78, 0.7) 0%,
+        rgba(248, 210, 78, 0.7) 100%
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.342px 20.033px rgba(153, 114, 23, 0.25);
+  }
+  .milkshakes-layout {
+    background: linear-gradient(
+        0deg,
+        rgba(213, 117, 63, 0.7) 0%,
+        rgba(213, 117, 63, 0.7) 100%
+      ),
+      #d9d9d9;
+    box-shadow: 0px 5.342px 20.033px rgba(0, 0, 0, 0.25);
+  }
+  // ======== Tablet/Desktop screen ========= //
+
+  @media (min-width: $tablet) {
+    max-width: 568px;
+    padding: 32px 54px;
+
+    &-list {
+      flex-direction: row;
+      gap: 32px;
+      margin: 103px 0 40px;
+    }
+    &-item {
+      flex-basis: calc((100% - 32px * 2) / 3);
+      padding: 95px 13px 20px;
     }
   }
 }

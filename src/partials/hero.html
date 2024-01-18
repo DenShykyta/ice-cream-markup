@@ -8,9 +8,17 @@
     <div class="img-wrapper">
       <img
         class="hero-image"
-        src="assets/images/ice-creams.png"
+        srcset="
+          ./assets/images/hero/plate-hero_152.png 152w,
+          ./assets/images/hero/plate-hero_225.png 225w,
+          ./assets/images/hero/plate-hero_304.png 304w,
+          ./assets/images/hero/plate-hero_450.png 450w
+        "
+        sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px, 100vw"
+        src="./assets/images/hero/plate-hero_152.png"
+        loading="lazy"
         alt="ice-creams"
-        width="225"
+        width="152"
       />
       <div>
         <p class="hero__text">

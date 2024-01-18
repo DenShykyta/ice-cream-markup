@@ -4,7 +4,21 @@
     <h2 class="title">how it’s made?</h2>
     <div class="main-wrapper">
       <div class="kow-layout">
-        <img src="assets/images/kow-img.png" alt="Kow" width="490" />
+        <img
+          srcset="
+            ./assets/images/about/about-cow_279.png 279w,
+            ./assets/images/about/about-cow_330.png 330w,
+            ./assets/images/about/about-cow_490.png 490w,
+            ./assets/images/about/about-cow_558.png 558w,
+            ./assets/images/about/about-cow_660.png 660w,
+            ./assets/images/about/about-cow_980.png 980w
+          "
+          sizes="(min-width: 1200px) 490px, (min-width: 768px) 330px,(min-width: 320px) 279px, 100vw"
+          src="assets/images/about/about-cow_279.png"
+          loading="lazy"
+          alt="Kow"
+          width="279"
+        />
       </div>
       <div class="text-wrapper">
         <ul class="text-list list">
