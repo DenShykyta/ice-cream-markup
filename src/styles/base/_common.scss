@@ -8,6 +8,10 @@ body {
   color: $main-txt-cl;
 }
 
+body.lock {
+  overflow: hidden;
+}
+
 // .section {
 //   padding: 0;
 // }

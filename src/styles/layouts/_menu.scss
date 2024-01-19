@@ -7,7 +7,7 @@
   padding: 12px 32px 64px;
   background-color: $mobile-menu-bg;
   z-index: 999;
-
+  opacity: 0.95;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 

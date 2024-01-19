@@ -8,6 +8,8 @@
       openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
     openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
     mobileMenu.classList.toggle('is-open');
+    // Відключення скрола сторінки при відкритому мобільному меню
+    document.body.classList.toggle('lock');
 
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
