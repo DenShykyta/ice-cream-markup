@@ -26,9 +26,10 @@ document.addEventListener('DOMContentLoaded', function () {
         );
 
       /* После того как нашли нужное модальное окно, добавим классы
-            подложке и окну чтобы показать их. */
+            подложке и окну чтобы показать их, отключим скрол сайта под подложкой */
       modalElem.classList.add('active');
       overlay.classList.add('active');
+      document.body.classList.toggle('lock');
     }); // end click
   }); // end foreach
 
@@ -38,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
+      document.body.classList.remove('lock');
     });
   }); // end foreach
 
@@ -49,6 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (key == 27) {
         document.querySelector('.modal.active').classList.remove('active');
         document.querySelector('.overlay').classList.remove('active');
+        document.body.classList.remove('lock');
       }
     },
     false
@@ -57,5 +60,6 @@ document.addEventListener('DOMContentLoaded', function () {
   overlay.addEventListener('click', function () {
     document.querySelector('.modal.active').classList.remove('active');
     this.classList.remove('active');
+    document.body.classList.remove('lock');
   });
 }); // end ready
