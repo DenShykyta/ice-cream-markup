@@ -23,16 +23,16 @@
     <nav class="header__nav">
       <ul class="nav__list list">
         <li class="nav__list-item">
-          <a href="#home" class="nav-link link">Home</a>
+          <a data-goto="#home" href="#" class="nav-link link">Home</a>
         </li>
         <li class="nav__list-item">
-          <a href="#about" class="nav-link link">How it’s made?</a>
+          <a data-goto="#about" href="#" class="nav-link link">How it’s made?</a>
         </li>
         <li class="nav__list-item">
-          <a href="#products" class="nav-link link">Our products</a>
+          <a data-goto="#products" href="#" class="nav-link link">Our products</a>
         </li>
         <li class="nav__list-item">
-          <a href="#contacts" class="nav-link link">Contact</a>
+          <a data-goto="#contacts" href="#" class="nav-link link">Contact</a>
         </li>
       </ul>
     </nav>
@@ -52,7 +52,8 @@
   </div>
 </header>
 
-    <section class="hero" id="home">
+    <main>
+      <section class="hero" id="home">
   <div class="hero-container container">
     <h1 class="hero__title title">ice cream made with <span>passion</span></h1>
     <div class="link-wrapper">
@@ -84,7 +85,7 @@
   </div>
 </section>
 
-    <section class="products" id="products">
+      <section class="products" id="products">
   <div class="products-container container">
     <h3 class="subtitle">100% natural</h3>
     <h2 class="products__title">products</h2>
@@ -138,7 +139,7 @@
   </div>
 </section>
 
-    <section class="about" id="about">
+      <section class="about" id="about">
   <div class="about__container container">
     <h3 class="about__subtitle subtitle">tradition and love</h3>
     <h2 class="title">how it’s made?</h2>
@@ -207,7 +208,7 @@
   </div>
 </section>
 
-    <section class="rewiews">
+      <section class="rewiews">
   <div class="container rewiews-container">
     <h2 class="visually-hidden">products</h2>
     <div class="carousel">
@@ -250,7 +251,7 @@
   </div>
 </section>
 
-    <section class="contacts" id="contacts">
+      <section class="contacts" id="contacts">
   <h2 class="visually-hidden">Contacts</h2>
   <div class="container contacts-container">
     <ul class="contacts__list list">
@@ -324,6 +325,7 @@
   </div>
 </section>
 
+    </main>
     <footer class="footer">
   <div class="container footer-container">
     <div class="footer-wrapper">
@@ -362,6 +364,7 @@
   </div>
 </footer>
 
+    <!-- modals -->
     <div class="overlay js-overlay-modal"></div>
 <div class="modal header-modal" data-modal="Buy-now">
   <h2 class="modal-title">Buy now</h2>
