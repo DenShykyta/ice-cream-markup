@@ -3,6 +3,10 @@
   max-width: 280px;
   padding: 28px;
 
+  // додає скрол модалки
+  max-height: 100vh;
+  overflow-y: auto;
+
   &-list {
     display: flex;
     flex-direction: column;

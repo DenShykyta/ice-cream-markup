@@ -5,9 +5,10 @@
 document.addEventListener('DOMContentLoaded', function () {
   /* Записываем в переменные массив элементов-кнопок и подложку.
       Подложке зададим id, чтобы не влиять на другие элементы с классом overlay*/
-  var modalButtons = document.querySelectorAll('.js-open-modal'),
+  const modalButtons = document.querySelectorAll('.js-open-modal'),
     overlay = document.querySelector('.js-overlay-modal'),
-    closeButtons = document.querySelectorAll('.js-modal-close');
+    closeButtons = document.querySelectorAll('.js-modal-close'),
+    video = document.querySelector('video');
 
   /* Перебираем массив кнопок */
   modalButtons.forEach(function (item) {
@@ -20,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
             и будем искать модальное окно с таким же атрибутом. */
-      var modalId = this.getAttribute('data-modal'),
+      const modalId = this.getAttribute('data-modal'),
         modalElem = document.querySelector(
           '.modal[data-modal="' + modalId + '"]'
         );
@@ -30,28 +31,37 @@ document.addEventListener('DOMContentLoaded', function () {
       modalElem.classList.add('active');
       overlay.classList.add('active');
       document.body.classList.toggle('lock');
+      // закриття мобільного меню при натисканні на кнопу Buy now в мобільній верстці
+      const mobileMenu = document.querySelector('.js-menu-container');
+      if (mobileMenu.classList.contains('is-open')) {
+        mobileMenu.classList.toggle('is-open');
+      }
     }); // end click
   }); // end foreach
 
   closeButtons.forEach(function (item) {
     item.addEventListener('click', function (e) {
-      var parentModal = this.closest('.modal');
+      const parentModal = this.closest('.modal');
 
       parentModal.classList.remove('active');
       overlay.classList.remove('active');
       document.body.classList.remove('lock');
+      // Ставить відео на паузу після закриття модалки
+      video.pause();
     });
   }); // end foreach
 
   document.body.addEventListener(
     'keyup',
     function (e) {
-      var key = e.keyCode;
+      const key = e.keyCode;
 
       if (key == 27) {
         document.querySelector('.modal.active').classList.remove('active');
         document.querySelector('.overlay').classList.remove('active');
         document.body.classList.remove('lock');
+        // Ставить відео на паузу після закриття модалки
+        video.pause();
       }
     },
     false
@@ -61,5 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('.modal.active').classList.remove('active');
     this.classList.remove('active');
     document.body.classList.remove('lock');
+    // Ставить відео на паузу після закриття модалки
+    video.pause();
   });
 }); // end ready

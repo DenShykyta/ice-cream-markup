@@ -2,6 +2,11 @@
 .product-modal {
   max-width: 280px;
   padding: 28px 20px;
+
+  // додає скрол модалки
+  height: 100vh;
+  overflow-y: auto;
+
   .modal-title {
     font-size: 20px;
     line-height: 28px;
