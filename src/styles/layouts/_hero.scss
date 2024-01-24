@@ -4,8 +4,8 @@
   .hero-container {
     padding-top: 50px;
     padding-bottom: 236px;
-    background-image: url('assets/images/hero/bg-faces_sm@1x.png'),
-      url('assets/images/hero/dots-hero-mobile.png');
+    background-image: url('assets/images/hero/bg-faces_sm@1x.webp'),
+      url('assets/images/hero/dots-hero-mobile.webp');
     background-repeat: no-repeat;
     background-position:
       right 60px bottom,
@@ -15,8 +15,8 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url('assets/images/hero/bg-faces_sm@2x.png'),
-        url('assets/images/hero/dots-hero-mobile.png');
+      background-image: url('assets/images/hero/bg-faces_sm@2x.webp'),
+        url('assets/images/hero/dots-hero-mobile.webp');
     }
   }
   .hero__title {
@@ -86,8 +86,8 @@
       position: relative;
       padding-top: 14px;
       padding-bottom: 12px;
-      background-image: url('assets/images/hero/bg-faces_md@1x.png'),
-        url('assets/images/hero/dots-hero-tablet.png');
+      background-image: url('assets/images/hero/bg-faces_md@1x.webp'),
+        url('assets/images/hero/dots-hero-tablet.webp');
       background-position:
         right 92px bottom,
         center bottom;
@@ -96,8 +96,8 @@
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url('assets/images/hero/bg-faces_md@2x.png'),
-          url('assets/images/hero/dots-hero-tablet.png');
+        background-image: url('assets/images/hero/bg-faces_md@2x.webp'),
+          url('assets/images/hero/dots-hero-tablet.webp');
       }
     }
 
@@ -154,8 +154,8 @@
       position: relative;
       padding-top: 45px;
       padding-bottom: 65px;
-      background-image: url('assets/images/hero/bg-faces_lg@1x.png'),
-        url('assets/images/hero/dots-hero-desktop.png');
+      background-image: url('assets/images/hero/bg-faces_lg@1x.webp'),
+        url('assets/images/hero/dots-hero-desktop.webp');
       background-position:
         right 92px bottom,
         center bottom;
@@ -164,8 +164,8 @@
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url('assets/images/hero/bg-faces_lg@2x.png'),
-          url('assets/images/hero/dots-hero-desktop.png');
+        background-image: url('assets/images/hero/bg-faces_lg@2x.webp'),
+          url('assets/images/hero/dots-hero-desktop.webp');
       }
     }
     .hero__title {

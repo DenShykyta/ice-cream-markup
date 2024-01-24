@@ -1,6 +1,6 @@
 # ice-cream-markup
 
-Empty project.
+
 
 ## Building and running on localhost
 
@@ -31,4 +31,3 @@ node dist/bundle.js
 ## Credits
 
 Made with [createapp.dev](https://createapp.dev/)
-

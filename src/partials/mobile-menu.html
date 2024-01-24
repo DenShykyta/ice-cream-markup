@@ -1,11 +1,15 @@
 <div class="menu-container js-menu-container" id="mobile-menu">
   <div class="menu-header">
-    <a class="logo link" href="#home">
+    <a class="logo link" href="#home" aria-label="Main mobile logo">
       <svg class="icon">
         <use href="assets/images/sprite.svg#icon-logo"></use>
       </svg>
     </a>
-    <button type="button" class="menu-toggle js-close-menu">
+    <button
+      type="button"
+      class="menu-toggle js-close-menu"
+      aria-label="Push to close the menu"
+    >
       <svg width="24" height="24">
         <use href="assets/images/sprite.svg#icon-close"></use>
       </svg>
@@ -13,19 +17,36 @@
   </div>
   <ul class="mobile-menu list">
     <li class="mobile-menu-item">
-      <a data-goto="#home" href="#" class="link">Home</a>
+      <a data-goto="#home" href="#" class="link" aria-label="To home page"
+        >Home</a
+      >
     </li>
     <li class="mobile-menu-item">
-      <a data-goto="#about" href="#" class="link">How it’s made?</a>
+      <a data-goto="#about" href="#" class="link" aria-label="How it’s made?"
+        >How it’s made?</a
+      >
     </li>
     <li class="mobile-menu-item">
-      <a data-goto="#products" href="#" class="link">Our products</a>
+      <a
+        data-goto="#products"
+        href="#"
+        class="link"
+        aria-label="To our products"
+        >Our products</a
+      >
     </li>
     <li class="mobile-menu-item">
-      <a data-goto="#contacts" href="#" class="link">Contact</a>
+      <a
+        data-goto="#contacts"
+        href="#"
+        class="link"
+        aria-label="To our contacts"
+        >Contact</a
+      >
     </li>
   </ul>
   <button
+    aria-label="Push to buy now"
     class="mobile__btn button js-open-modal"
     data-modal="Buy-now"
     type="button"

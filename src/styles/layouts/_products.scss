@@ -1,7 +1,7 @@
-// ============== Tablet screen ================ //
+// ============== Mobile screen ================ //
 
 .products {
-  background-image: url('assets/images/backgroud_mobile.jpg');
+  background-image: url('assets/images/backgroud_mobile.webp');
   background-repeat: repeat;
   background-position: center;
 
@@ -65,7 +65,7 @@
       }
     }
 
-    & h4 {
+    & h3 {
       font-size: 20px;
       font-weight: 700;
       line-height: normal;
@@ -126,7 +126,7 @@
   // ============ Tablet screen ============ //
 
   @media (min-width: $tablet) {
-    background-image: url('assets/images/backgroud_tablet.jpg');
+    background-image: url('assets/images/backgroud_tablet.webp');
 
     .products__title {
       font-size: 34px;
@@ -145,7 +145,7 @@
       border-radius: 16px;
       box-shadow: 0px 5.26px 19.726px 0px rgba(212, 20, 67, 0.1);
 
-      & h4 {
+      & h3 {
         font-size: 22px;
         letter-spacing: 0.8px;
         margin-bottom: 40px;
@@ -173,7 +173,7 @@
   // ============ Desktop screen ============ //
 
   @media (min-width: $desktop) {
-    background-image: url('assets/images/backgroud_desktop.jpg');
+    background-image: url('assets/images/backgroud_desktop.webp');
 
     .products__title {
       font-size: 36px;
@@ -191,7 +191,7 @@
       border-radius: 24px;
       box-shadow: 0px 8px 30px 0px rgba(212, 20, 67, 0.1);
 
-      & h4 {
+      & h3 {
         font-size: 30px;
         letter-spacing: 1.2px;
         margin-bottom: 66px;

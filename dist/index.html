@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ice-creams, how it's made, reviews, contacts for buying our products.">
     <title>Ice Cream</title>
     <link rel="icon" href="/logo-favicon.d4f74892.svg" type="image/svg+xml">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +16,7 @@
   <body>
     <header class="header">
   <div class="header-container container">
-    <a class="header__logo link" href="#home">
+    <a class="header__logo link" href="#home" aria-label="Main header-logo ">
       <svg class="icon">
         <use href="/sprite.73486ab0.svg#icon-logo"></use>
       </svg>
@@ -23,21 +24,21 @@
     <nav class="header__nav">
       <ul class="nav__list list">
         <li class="nav__list-item">
-          <a data-goto="#home" href="#" class="nav-link link">Home</a>
+          <a data-goto="#home" href="#" class="nav-link link" aria-label="To Home page">Home</a>
         </li>
         <li class="nav__list-item">
-          <a data-goto="#about" href="#" class="nav-link link">How it’s made?</a>
+          <a data-goto="#about" href="#" class="nav-link link" aria-label="How it’s made?">How it’s made?</a>
         </li>
         <li class="nav__list-item">
-          <a data-goto="#products" href="#" class="nav-link link">Our products</a>
+          <a data-goto="#products" href="#" class="nav-link link" aria-label="To our products">Our products</a>
         </li>
         <li class="nav__list-item">
-          <a data-goto="#contacts" href="#" class="nav-link link">Contact</a>
+          <a data-goto="#contacts" href="#" class="nav-link link" aria-label="To contacts">Contact</a>
         </li>
       </ul>
     </nav>
     <div class="header-btn-wrapper">
-      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+      <button aria-label="Push to open menu" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg width="32" height="32">
           <use href="/sprite.73486ab0.svg#icon-menu"></use>
         </svg>
@@ -57,11 +58,13 @@
   <div class="hero-container container">
     <h1 class="hero__title title">ice cream made with <span>passion</span></h1>
     <div class="link-wrapper">
-      <a class="button hero__button" href="#products"> Products </a>
-      <a class="hero-link link" href="#about">How it’s made?</a>
+      <a class="button hero__button" href="#products" aria-label="To Products page">
+        Products
+      </a>
+      <a class="hero-link link" href="#about" aria-label="How it’s made?">How it’s made?</a>
     </div>
     <div class="img-wrapper">
-      <img class="hero-image" srcset="/plate-hero_152.aee852e2.png 152w,/plate-hero_225.b2ba9109.png 225w,/plate-hero_304.81dce2ca.png 304w,/plate-hero_450.3f1dcc6a.png 450w" sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px, 100vw" src="/plate-hero_152.aee852e2.png" loading="lazy" alt="ice-creams" width="152">
+      <img class="hero-image" srcset="/plate-hero_152.f2d5574e.webp 152w,/plate-hero_225.1141ef26.webp 225w,/plate-hero_304.6874a61e.webp 304w,/plate-hero_450.c94d1921.webp 450w" sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px, 100vw" src="/plate-hero_152.f2d5574e.webp" loading="lazy" alt="ice-creams" width="152" height="152">
       <div>
         <p class="hero__text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -87,19 +90,19 @@
 
       <section class="products" id="products">
   <div class="products-container container">
-    <h3 class="subtitle">100% natural</h3>
+    <h2 class="subtitle">100% natural</h2>
     <h2 class="products__title">products</h2>
     <ul class="products__list list">
       <li class="product__item">
         <div class="layout ice-cream-layout">
-          <img srcset="/ice-cream_200.3a0f58d3.png 200w,/ice-cream_400.a17dfee1.png 400w,/ice-cream_302.6573e7bd.png 302w,/ice-cream_604.d5d1bc80.png 604w" sizes="(min-width: 1200px) 302px, (min-width: 768px) 200px, (min-width: 320px) 200px, 100vw" src="/ice-cream_200.3a0f58d3.png" alt="ice cream" loading="lazy" width="200">
+          <img srcset="/ice-cream_200.4ebc1dd9.webp 200w,/ice-cream_400.a5c458ec.webp 400w,/ice-cream_302.261abbe7.webp 302w,/ice-cream_604.ead91fa8.webp 604w" sizes="(min-width: 1200px) 302px, (min-width: 768px) 200px, (min-width: 320px) 200px, 100vw" src="/ice-cream_200.4ebc1dd9.webp" alt="ice cream" loading="lazy" width="200">
         </div>
-        <h4>ice cream</h4>
+        <h3>ice cream</h3>
         <p>
           Soft ice cream with a delicate taste. Made with milk, cream, sugar and
           natural stabilizer
         </p>
-        <button class="product__arrow-button js-open-modal" data-modal="Product">
+        <button aria-label="Push to open the information about this product" class="product__arrow-button js-open-modal" data-modal="Product">
           <svg class="icon" width="40" height="16">
             <use href="/sprite.73486ab0.svg#icon-Arrow"></use>
           </svg>
@@ -107,14 +110,14 @@
       </li>
       <li class="product__item">
         <div class="layout ice-coffee-layout">
-          <img srcset="/ice-coffee_200.0bab851c.png 200w,/ice-coffee_400.dc3c7fdb.png 400w,/ice-coffee_302.4f3dcffd.png 302w,/ice-coffee_604.3e404491.png 604w" sizes="(min-width: 1200px) 302px, (min-width: 768px) 200px, (min-width: 320px) 200px, 100vw" src="/ice-coffee_200.0bab851c.png" alt="ice coffee" loading="lazy" width="200">
+          <img srcset="/ice-coffee_200.bdf8fc5c.webp 200w,/ice-coffee_400.a727a126.webp 400w,/ice-coffee_302.16f1604e.webp 302w,/ice-coffee_604.32c51e2c.webp 604w" sizes="(min-width: 1200px) 302px, (min-width: 768px) 200px, (min-width: 320px) 200px, 100vw" src="/ice-coffee_200.bdf8fc5c.webp" alt="ice coffee" loading="lazy" width="200">
         </div>
-        <h4>ice coffee</h4>
+        <h3>ice coffee</h3>
         <p>
           Fragrant invigorating drink created from 100% natural ingredients
           without the use of preservatives and flavor enhancers
         </p>
-        <button class="product__arrow-button js-open-modal" data-modal="Product">
+        <button aria-label="Push to open the information about this product" class="product__arrow-button js-open-modal" data-modal="Product">
           <svg class="icon" width="40" height="16">
             <use href="/sprite.73486ab0.svg#icon-Arrow"></use>
           </svg>
@@ -122,14 +125,14 @@
       </li>
       <li class="product__item">
         <div class="layout milkshakes-layout">
-          <img srcset="/milkshakes_200.fc42a096.png 200w,/milkshakes_400.8703add9.png 400w,/milkshakes_302.632530cc.png 302w,/milkshakes_604.3434dce5.png 604w" sizes="(min-width: 1200px) 302px, (min-width: 768px) 200px, (min-width: 320px) 200px, 100vw" src="/milkshakes_200.fc42a096.png" alt="milkshakes" loading="lazy" width="200">
+          <img srcset="/milkshakes_200.aaeea385.webp 200w,/milkshakes_400.67f06699.webp 400w,/milkshakes_302.256355de.webp 302w,/milkshakes_604.49815f9b.webp 604w" sizes="(min-width: 1200px) 302px, (min-width: 768px) 200px, (min-width: 320px) 200px, 100vw" src="/milkshakes_200.aaeea385.webp" alt="milkshakes" loading="lazy" width="200">
         </div>
-        <h4>milkshakes</h4>
+        <h3>milkshakes</h3>
         <p>
           Sweet drinks based on milk and ice cream, supplemented with syrups,
           fruits, berries and other sweets of your choice
         </p>
-        <button class="product__arrow-button js-open-modal" data-modal="Product">
+        <button aria-label="Push to open the information about this product" class="product__arrow-button js-open-modal" data-modal="Product">
           <svg class="icon" width="40" height="16">
             <use href="/sprite.73486ab0.svg#icon-Arrow"></use>
           </svg>
@@ -145,7 +148,7 @@
     <h2 class="title">how it’s made?</h2>
     <div class="main-wrapper">
       <div class="kow-layout">
-        <img srcset="/about-cow_279.bee80b10.png 279w,/about-cow_330.671261ea.png 330w,/about-cow_490.c14efc3f.png 490w,/about-cow_558.de98fe67.png 558w,/about-cow_660.5d198415.png 660w,/about-cow_980.51e10739.png 980w" sizes="(min-width: 1200px) 490px, (min-width: 768px) 330px,(min-width: 320px) 279px, 100vw" src="/about-cow_279.bee80b10.png" loading="lazy" alt="Kow" width="279">
+        <img srcset="/about-cow_279.90692c50.webp 279w,/about-cow_330.99d11763.webp 330w,/about-cow_490.33f9daad.webp 490w,/about-cow_558.c25b6ccb.webp 558w,/about-cow_660.1cf9a759.webp 660w,/about-cow_980.6c032a22.webp 980w" sizes="(min-width: 1200px) 490px, (min-width: 768px) 330px,(min-width: 320px) 279px, 100vw" src="/about-cow_279.90692c50.webp" loading="lazy" alt="Kow" width="279">
       </div>
       <div class="text-wrapper">
         <ul class="text-list list">
@@ -168,7 +171,7 @@
             <p>This is enough to choose ice cream and coffee for any mood!</p>
           </li>
         </ul>
-        <button type="button" class="button js-open-modal" data-modal="read_more">
+        <button aria-label="Push to read more about ice-cream" type="button" class="button js-open-modal" data-modal="read_more">
           Read more
           <svg width="12" height="12">
             <use href="/sprite.73486ab0.svg#icon-arrow-right"></use>
@@ -213,8 +216,8 @@
     <h2 class="visually-hidden">products</h2>
     <div class="carousel">
       <div class="carousel__item">
-        <img class="rewiews__img" srcset="/slide-1@1x.5b7d5812.jpg 1x,/slide-1@2x.2ae97a61.jpg 2x" src="/slide-1@1x.5b7d5812.jpg" loading="lazy" alt="ice-cream" width="1013">
-        <img class="user-img" srcset="/img-1@1x.d5dadc9c.jpg 1x,/img-1@2x.ab637d34.jpg 2x" src="/img-1@1x.d5dadc9c.jpg" loading="lazy" alt="Emily" width="85">
+        <img class="rewiews__img" srcset="/slide-1@1x.226d2049.webp 1x,/slide-1@2x.f0477a96.webp 2x" src="/slide-1@1x.226d2049.webp" loading="lazy" alt="ice-cream" width="1013">
+        <img class="user-img" srcset="/img-1@1x.c6771f4d.webp 1x,/img-1@2x.56e520b6.webp 2x" src="/img-1@1x.c6771f4d.webp" loading="lazy" alt="Emily" width="85" height="85">
         <div class="carousel__text-wrapper">
           <p class="carousel__text">
             I love visiting your cafe. You prepare the most delicious ice cream
@@ -225,8 +228,8 @@
         <p class="carousel__name">Emily, Los Angeles</p>
       </div>
       <div class="carousel__item">
-        <img class="rewiews__img" srcset="/slide-2@1x.7557bbd7.jpg 1x,/slide-2@2x.24d95b3a.jpg 2x" src="/slide-2@1x.7557bbd7.jpg" loading="lazy" alt="ice-cream" width="1013">
-        <img class="user-img" srcset="/img-2@1x.7784a713.jpg 1x,/img-2@2x.4db26aa1.jpg 2x" src="/img-2@1x.7784a713.jpg" loading="lazy" alt="Bryan" width="85">
+        <img class="rewiews__img" srcset="/slide-2@1x.8f1da4d9.webp 1x,/slide-2@2x.0812a425.webp 2x" src="/slide-2@1x.8f1da4d9.webp" loading="lazy" alt="ice-cream" width="1013">
+        <img class="user-img" srcset="/img-2@1x.f28b74a5.webp 1x,/img-2@2x.f1a9822f.webp 2x" src="/img-2@1x.f28b74a5.webp" loading="lazy" alt="Bryan" width="85" height="85">
         <div class="carousel__text-wrapper">
           <p class="carousel__text">
             Every day we come to you with friends after classes in college. We
@@ -236,8 +239,8 @@
         <p class="carousel__name">Bryan, New-York</p>
       </div>
       <div class="carousel__item">
-        <img class="rewiews__img" srcset="/slide-3@1x.84993adf.jpg 1x,/slide-3@2x.063a8ff1.jpg 2x" src="/slide-3@1x.84993adf.jpg" loading="lazy" alt="ice-cream" width="1013">
-        <img class="user-img" srcset="/img-3@1x.f4aea3ae.jpg 1x,/img-3@2x.31e9ba33.jpg 2x" src="/img-3@1x.f4aea3ae.jpg" loading="lazy" alt="Diana" width="85">
+        <img class="rewiews__img" srcset="/slide-3@1x.d9ed92e5.webp 1x,/slide-3@2x.d3e43db7.webp 2x" src="/slide-3@1x.d9ed92e5.webp" loading="lazy" alt="ice-cream" width="1013">
+        <img class="user-img" srcset="/img-3@1x.d50da658.webp 1x,/img-3@2x.9b1e341b.webp 2x" src="/img-3@1x.d50da658.webp" loading="lazy" alt="Diana" width="85" height="85">
         <div class="carousel__text-wrapper">
           <p class="carousel__text">
             Ice cream is my passion! I love your chocolate hazelnut ice cream!
@@ -256,7 +259,7 @@
   <div class="container contacts-container">
     <ul class="contacts__list list">
       <li class="contacts__item">
-        <h4 class="contacts__item-title">CAFE</h4>
+        <h3 class="contacts__item-title">CAFE</h3>
         <div class="contacts__item-address">
           <p>Chicago</p>
           <span>10340 Ridgeland Ave, Chicago Ridge, IL 60415, USA</span>
@@ -268,12 +271,12 @@
           <span>08:00 AM - 16:00 PM</span>
         </div>
         <div class="contact-data">
-          <a class="link contact-data-link" href="tel:+380961111111">+61(0) 383 766 284</a>
-          <a class="link contact-data-link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          <a class="link contact-data-link" aria-label="Contact phone number" href="tel:+380961111111">+61(0) 383 766 284</a>
+          <a class="link contact-data-link" aria-label="Contact email" href="mailto:noreply@envato.com">noreply@envato.com</a>
         </div>
       </li>
       <li class="contacts__item">
-        <h4 class="contacts__item-title">FOOD TRUCK</h4>
+        <h3 class="contacts__item-title">FOOD TRUCK</h3>
         <div class="contacts__item-address">
           <p>Los Angeles</p>
           <span> 1003 Manhattan Ave, Manhattan Beach, CA 90263, USA </span>
@@ -285,12 +288,12 @@
           <span>08:00 AM - 16:00 PM</span>
         </div>
         <div class="contact-data">
-          <a class="link contact-data-link" href="tel:+380961111111">+61(0) 383 766 284</a>
-          <a class="link contact-data-link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          <a class="link contact-data-link" aria-label="Contact phone number" href="tel:+380961111111">+61(0) 383 766 284</a>
+          <a class="link contact-data-link" aria-label="Contact email" href="mailto:noreply@envato.com">noreply@envato.com</a>
         </div>
       </li>
       <li class="contacts__item">
-        <h4 class="contacts__item-title">CAFE</h4>
+        <h3 class="contacts__item-title">CAFE</h3>
         <div class="contacts__item-address">
           <p>New York</p>
           <span>726 Sterling Pl, Brooklyn, NY 11222, USA</span>
@@ -302,20 +305,20 @@
           <span>08:00 AM - 16:00 PM</span>
         </div>
         <div class="contact-data">
-          <a class="link contact-data-link" href="tel:+380961111111">+61(0) 383 766 284</a>
-          <a class="link contact-data-link" href="mailto:noreply@envato.com">noreply@envato.com</a>
+          <a class="link contact-data-link" aria-label="Contact phone number" href="tel:+380961111111">+61(0) 383 766 284</a>
+          <a class="link contact-data-link" aria-label="Contact email" href="mailto:noreply@envato.com">noreply@envato.com</a>
         </div>
       </li>
     </ul>
 
     <div class="contacts__buttons">
-      <button class="button js-open-modal" type="button" data-modal="location">
+      <button class="button js-open-modal" aria-label="Push to open our locations" type="button" data-modal="location">
         Our Locations
         <svg width="12" height="12">
           <use href="/sprite.73486ab0.svg#icon-arrow-right"></use>
         </svg>
       </button>
-      <button class="franchise_btn button js-open-modal" type="button" data-modal="franchise">
+      <button class="franchise_btn button js-open-modal" aria-label="Push to open our franchise window" type="button" data-modal="franchise">
         Franchise
         <svg width="12" height="12">
           <use href="/sprite.73486ab0.svg#icon-arrow-right"></use>
@@ -336,19 +339,19 @@
       <div class="social">
         <ul class="social__list list">
           <li class="social__item">
-            <a href="" class="social__link"><svg class="social-icon" width="20" height="20">
+            <a href="#" class="social__link" aria-label="GitHub"><svg class="social-icon" width="20" height="20">
                 <use href="/sprite.73486ab0.svg#icon-github"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a href="" class="social__link"><svg class="social-icon" width="20" height="20">
+            <a href="#" class="social__link" aria-label="Telegram"><svg class="social-icon" width="20" height="20">
                 <use href="/sprite.73486ab0.svg#icon-telegram"></use>
               </svg>
             </a>
           </li>
           <li class="social__item">
-            <a href="" class="social__link"><svg class="social-icon" width="20" height="20">
+            <a href="#" class="social__link" aria-label="Facebook"><svg class="social-icon" width="20" height="20">
                 <use href="/sprite.73486ab0.svg#icon-facebook"></use>
               </svg>
             </a>
@@ -356,11 +359,11 @@
         </ul>
         <p class="contact-text">
           Feel free to contact
-          <a class="link contact-phone-number" href="tel:+380961111111">+61 (0) 383 766 284</a>
+          <a class="link contact-phone-number" aria-label="Contact phone number" href="tel:+380961111111">+61 (0) 383 766 284</a>
         </p>
       </div>
     </div>
-    <p class="copyright-text">© 2022 - IceCream. All Rights Reserved.</p>
+    <p class="copyright-text">© 2024 - IceCream. All Rights Reserved.</p>
   </div>
 </footer>
 
@@ -368,7 +371,7 @@
     <div class="overlay js-overlay-modal"></div>
 <div class="modal header-modal" data-modal="Buy-now">
   <h2 class="modal-title">Buy now</h2>
-  <button type="button" class="close js-modal-close">
+  <button type="button" class="close js-modal-close" aria-label="Push to close the window">
     <svg width="24" height="24">
       <use href="/sprite.73486ab0.svg#icon-close"></use>
     </svg>
@@ -376,20 +379,20 @@
   <ul class="list header-modal-list">
     <li class="header-modal-item">
       <div class="layout ice-cream-layout">
-        <img srcset="/img-1@1x.6ec63147.png 1x,/img-1@2x.82b394a2.png 2x" src="/img-1@1x.6ec63147.png" loading="lazy" alt="ice cream" width="132">
+        <img srcset="/img-1@1x.628d397f.webp 1x,/img-1@2x.200e6755.webp 2x" src="/img-1@1x.628d397f.webp" loading="lazy" alt="ice cream" width="132">
       </div>
       <p>ice cream</p>
     </li>
     <li class="header-modal-item">
       <div class="layout ice-coffee-layout">
-        <img srcset="/img-2@1x.20250f42.png 1x,/img-2@2x.7781a261.png 2x" src="/img-2@1x.20250f42.png" loading="lazy" alt="ice coffee" width="132">
+        <img srcset="/img-2@1x.43c340b0.webp 1x,/img-2@2x.b30cc980.webp 2x" src="/img-2@1x.43c340b0.webp" loading="lazy" alt="ice coffee" width="132">
       </div>
 
       <p>ice coffee</p>
     </li>
     <li class="header-modal-item">
       <div class="layout milkshakes-layout">
-        <img srcset="/img-3@1x.c40f9d15.png 1x,/img-3@2x.566f4135.png 2x" src="/img-3@1x.c40f9d15.png" loading="lazy" alt="milkshake" width="132">
+        <img srcset="/img-3@1x.c2f5459c.webp 1x,/img-3@2x.ff8ef382.webp 2x" src="/img-3@1x.c2f5459c.webp" loading="lazy" alt="milkshake" width="132">
       </div>
 
       <p>milkshake</p>
@@ -401,20 +404,20 @@
     <label>
       <textarea type="text" placeholder="Comment"></textarea>
     </label>
-    <button type="submit" class="button">Submit</button>
+    <button type="submit" class="button" aria-label="Push to submit form">Submit</button>
   </form>
 </div>
 
     <div class="overlay js-overlay-modal"></div>
 <div class="modal product-modal" data-modal="Product">
   <h2 class="modal-title">Chololate icecream</h2>
-  <button type="button" class="close js-modal-close">
+  <button type="button" class="close js-modal-close" aria-label="Push to close the window">
     <svg width="24" height="24">
       <use href="/sprite.73486ab0.svg#icon-close"></use>
     </svg>
   </button>
   <div class="layout">
-    <img srcset="/img-4@1x.de47a904.png 1x,/img-4@2x.4fb81a4b.png 2x" src="/img-4@1x.de47a904.png" loading="lazy" alt="Chololate icecream" width="132">
+    <img srcset="/img-4@1x.20213ab2.webp 1x,/img-4@2x.1fe4be31.webp 2x" src="/img-4@1x.20213ab2.webp" loading="lazy" alt="Chololate icecream" width="132">
   </div>
   <ul class="list nutritional-value-list">
     <li class="nutritional-value-item">
@@ -467,14 +470,16 @@
     <label>
       <textarea type="text" placeholder="Comment"></textarea>
     </label>
-    <button type="submit" class="button">Submit</button>
+    <button type="submit" class="button" aria-label="Push to submit form">
+      Submit
+    </button>
   </form>
 </div>
 
     <div class="overlay js-overlay-modal"></div>
 <div class="modal read_more-modal" data-modal="read_more">
   <h2 class="modal-title">How it’s made?</h2>
-  <button type="button" class="close js-modal-close">
+  <button type="button" class="close js-modal-close" aria-label="Push to close the window">
     <svg width="24" height="24">
       <use href="/sprite.73486ab0.svg#icon-close"></use>
     </svg>
@@ -492,7 +497,7 @@
     <div class="overlay js-overlay-modal"></div>
 <div class="modal location-modal" data-modal="location">
   <h2 class="modal-title">Our Locations</h2>
-  <button type="button" class="close js-modal-close">
+  <button type="button" class="close js-modal-close" aria-label="Push to close the window">
     <svg width="24" height="24">
       <use href="/sprite.73486ab0.svg#icon-close"></use>
     </svg>
@@ -500,7 +505,7 @@
   <div class="map-wrapper">
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d82744.71155383743!2d34.557238549999994!3d49.60204445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d825e425e6ba6b%3A0xcf3e6bdfb9e4ca82!2z0J_QvtC70YLQsNCy0LAsINCf0L7Qu9GC0LDQstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCAzNjAwMA!5e0!3m2!1sru!2sua!4v1671214154162!5m2!1sru!2sua" width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       <div class="location-btn">
-       <a class="link button" target="_blank" href="https://goo.gl/maps/rStyy7rmeLihcvrTA">Open map</a>
+       <a aria-label="Push to open map" class="link button" target="_blank" href="https://goo.gl/maps/rStyy7rmeLihcvrTA">Open map</a>
     </div>
     </div>
     
@@ -514,7 +519,7 @@
   <h2 class="modal-title">
     Thank you for your interest in owning an Ice Cream shop
   </h2>
-  <button type="button" class="close js-modal-close">
+  <button type="button" class="close js-modal-close" aria-label="Push to close the window">
     <svg width="24" height="24">
       <use href="/sprite.73486ab0.svg#icon-close"></use>
     </svg>
@@ -533,18 +538,20 @@
     <label>
       <textarea type="text" placeholder="Comment"></textarea>
     </label>
-    <button type="submit" class="button">Submit</button>
+    <button type="submit" class="button" aria-label="Push to submit franchise form">
+      Submit
+    </button>
   </form>
 </div>
 
     <div class="menu-container js-menu-container" id="mobile-menu">
   <div class="menu-header">
-    <a class="logo link" href="#home">
+    <a class="logo link" href="#home" aria-label="Main mobile logo">
       <svg class="icon">
         <use href="/sprite.73486ab0.svg#icon-logo"></use>
       </svg>
     </a>
-    <button type="button" class="menu-toggle js-close-menu">
+    <button type="button" class="menu-toggle js-close-menu" aria-label="Push to close the menu">
       <svg width="24" height="24">
         <use href="/sprite.73486ab0.svg#icon-close"></use>
       </svg>
@@ -552,19 +559,19 @@
   </div>
   <ul class="mobile-menu list">
     <li class="mobile-menu-item">
-      <a data-goto="#home" href="#" class="link">Home</a>
+      <a data-goto="#home" href="#" class="link" aria-label="To home page">Home</a>
     </li>
     <li class="mobile-menu-item">
-      <a data-goto="#about" href="#" class="link">How it’s made?</a>
+      <a data-goto="#about" href="#" class="link" aria-label="How it’s made?">How it’s made?</a>
     </li>
     <li class="mobile-menu-item">
-      <a data-goto="#products" href="#" class="link">Our products</a>
+      <a data-goto="#products" href="#" class="link" aria-label="To our products">Our products</a>
     </li>
     <li class="mobile-menu-item">
-      <a data-goto="#contacts" href="#" class="link">Contact</a>
+      <a data-goto="#contacts" href="#" class="link" aria-label="To our contacts">Contact</a>
     </li>
   </ul>
-  <button class="mobile__btn button js-open-modal" data-modal="Buy-now" type="button">
+  <button aria-label="Push to buy now" class="mobile__btn button js-open-modal" data-modal="Buy-now" type="button">
     <span>Buy now</span>
     <svg width="12" height="12">
       <use href="/sprite.73486ab0.svg#icon-arrow-right"></use>

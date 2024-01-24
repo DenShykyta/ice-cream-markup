@@ -2,23 +2,32 @@
   <div class="hero-container container">
     <h1 class="hero__title title">ice cream made with <span>passion</span></h1>
     <div class="link-wrapper">
-      <a class="button hero__button" href="#products"> Products </a>
-      <a class="hero-link link" href="#about">How it’s made?</a>
+      <a
+        class="button hero__button"
+        href="#products"
+        aria-label="To Products page"
+      >
+        Products
+      </a>
+      <a class="hero-link link" href="#about" aria-label="How it’s made?"
+        >How it’s made?</a
+      >
     </div>
     <div class="img-wrapper">
       <img
         class="hero-image"
         srcset="
-          ./assets/images/hero/plate-hero_152.png 152w,
-          ./assets/images/hero/plate-hero_225.png 225w,
-          ./assets/images/hero/plate-hero_304.png 304w,
-          ./assets/images/hero/plate-hero_450.png 450w
+          ./assets/images/hero/plate-hero_152.webp 152w,
+          ./assets/images/hero/plate-hero_225.webp 225w,
+          ./assets/images/hero/plate-hero_304.webp 304w,
+          ./assets/images/hero/plate-hero_450.webp 450w
         "
         sizes="(min-width: 1200px) 225px, (min-width: 768px) 152px, 100vw"
-        src="./assets/images/hero/plate-hero_152.png"
+        src="./assets/images/hero/plate-hero_152.webp"
         loading="lazy"
         alt="ice-creams"
         width="152"
+        height="152"
       />
       <div>
         <p class="hero__text">

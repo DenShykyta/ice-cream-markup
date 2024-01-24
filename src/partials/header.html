@@ -1,6 +1,6 @@
 <header class="header">
   <div class="header-container container">
-    <a class="header__logo link" href="#home">
+    <a class="header__logo link" href="#home" aria-label="Main header-logo ">
       <svg class="icon">
         <use href="assets/images/sprite.svg#icon-logo"></use>
       </svg>
@@ -8,25 +8,46 @@
     <nav class="header__nav">
       <ul class="nav__list list">
         <li class="nav__list-item">
-          <a data-goto="#home" href="#" class="nav-link link">Home</a>
+          <a
+            data-goto="#home"
+            href="#"
+            class="nav-link link"
+            aria-label="To Home page"
+            >Home</a
+          >
         </li>
         <li class="nav__list-item">
-          <a data-goto="#about" href="#" class="nav-link link"
+          <a
+            data-goto="#about"
+            href="#"
+            class="nav-link link"
+            aria-label="How it’s made?"
             >How it’s made?</a
           >
         </li>
         <li class="nav__list-item">
-          <a data-goto="#products" href="#" class="nav-link link"
+          <a
+            data-goto="#products"
+            href="#"
+            class="nav-link link"
+            aria-label="To our products"
             >Our products</a
           >
         </li>
         <li class="nav__list-item">
-          <a data-goto="#contacts" href="#" class="nav-link link">Contact</a>
+          <a
+            data-goto="#contacts"
+            href="#"
+            class="nav-link link"
+            aria-label="To contacts"
+            >Contact</a
+          >
         </li>
       </ul>
     </nav>
     <div class="header-btn-wrapper">
       <button
+        aria-label="Push to open menu"
         class="menu-toggle js-open-menu"
         aria-expanded="false"
         aria-controls="mobile-menu"
