@@ -1,6 +1,6 @@
 # ![](./src/assets/images/logo-favicon.svg) ice-cream
 
-A one-page website about ice cream. An adaptive site with 3 breakpoints: 480px,
+A one-page website about ice cream. An adaptive site with 3 breakpoints: 320px,
 768px, 1200px. The project is assembled using the Parcel. SASS preprocessor is
 used.
 
