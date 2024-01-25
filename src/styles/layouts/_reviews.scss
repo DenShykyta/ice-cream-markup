@@ -22,7 +22,9 @@
   // ============== Desktop screen ============ //
   @media (min-width: $desktop) {
     background: $main-bg-cl url('assets/images/backgroud_desktop.webp');
+    background-repeat: repeat-x;
     background-position: center top 98px;
+
     &-container {
       padding-bottom: 228px;
     }
