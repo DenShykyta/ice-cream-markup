@@ -15,7 +15,7 @@ Follow the link to view the
 - Parcel
 - Slick-carousel
 - Posthtml-include
-- gitHub Desctope
+- gitHub Desktop
 - gitHub
 
 ## Building and running on localhost
